@@ -5,18 +5,18 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
-<meta name="generator" content="HelpSmith 10.1 (Build 24.1202)" />
-<link type="text/css" rel="stylesheet" href="css/tree.css?b1fab730" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?6b91d189" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?6b91d189" />
-<link type="text/css" rel="stylesheet" href="css/app.css?6b91d189" />
+<meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
+<link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?135ca9d0" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?135ca9d0" />
+<link type="text/css" rel="stylesheet" href="css/app.css?135ca9d0" />
 <script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/tree.min.js?b1fab730"></script>
-<script src="js/tabs.min.js?b1fab730"></script>
-<script src="js/jquery.cookie.js?b1fab730"></script>
-<script src="js/headroom.min.js?b1fab730"></script>
-<script src="js/app.min.js?b1fab730"></script>
-<script src="js/search.min.js?b1fab730"></script>
+<script src="js/tree.min.js?9b90ff95"></script>
+<script src="js/tabs.min.js?9b90ff95"></script>
+<script src="js/jquery.cookie.js?9b90ff95"></script>
+<script src="js/headroom.min.js?9b90ff95"></script>
+<script src="js/app.min.js?135ca9d0"></script>
+<script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
 doAppStart();
@@ -56,7 +56,9 @@ doAppStart();
 				<li class="hs-toc-tab" role="tab">
 					<a href="#hs-toc-panel">Contents</a>
 				</li>
-				
+				<li class="hs-index-tab" role="tab">
+					<a href="#hs-index-panel">Index</a>
+				</li>
 				<li class="hs-search-tab" role="tab">
 					<a href="#hs-search-panel">Search</a>
 				</li>
@@ -65,7 +67,15 @@ doAppStart();
 				<div class="hstabs-panel" id="hs-toc-panel" role="tabpanel">
 					<div id="toc-tree" class="hs-tree"></div>
 				</div>
-				
+				<div class="hstabs-panel" id="hs-index-panel" role="tabpanel">
+					<div class="hs-index-content">
+						<div id="kwd-search-box">
+							<label for="kwd-search" class="sfield-title text-label">Type in the keyword(s) to find:</label>
+							<input type="text" id="kwd-search" autocomplete="off" />
+						</div>
+						<div id ="index-tree" class="hs-tree"></div>
+					</div>
+				</div>
 				<div class="hstabs-panel" id="hs-search-panel" role="tabpanel">
 					<div id="hs-search-content">
 						<div id="search-form">
@@ -97,21 +107,21 @@ doAppStart();
       <table class="align-c tbl0">
         <tr class="row0">
           <td class="cell0">
-            <p class="ps0"><a href="integrationplatformintro.html" class="hs0">Introduction to the Integration Platform</a><span class="ts0">&nbsp;/ </span></p>
+            <p class="ps0"><a href="introduction.html" class="hs0">Introduction to the Integration Platform</a><span class="ts0">&nbsp;/ </span></p>
             <h1 class="hd0"><span class="ts1">Snapshots</span></h1>
           </td>
           <td class="cell1">
             <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22Snapshots%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
-            <p class="ps2"><a href="target-systems.html" title="Target Systems" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="components.html" title="Components" class="hs0">Next →</a></p>
+            <p class="ps2"><a href="targetsystems.html" title="Target Systems" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="components.html" title="Components" class="hs0">Next →</a></p>
           </td>
         </tr>
       </table>
     </div>
-    <p class="ps3"><span class="ts4">A snapshot is a copy of the state of the </span><a href="origin-application.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data at a specific point in time.</span></p>
+    <p class="ps3"><span class="ts4">A snapshot is a copy of the state of the </span><a href="originapplication.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data at a specific point in time.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Snapshots are requested via a message sent to the Kafka </span><a href="apachekafka.html#SNAPSHOT_REQUEST_TOPIC" class="hs1">snapshot request topic</a><span class="ts4">, are created by the </span><a href="snapshotagent.html" class="hs1">snapshot agent</a><span class="ts4">, which signifies completion by writing a message to the Kafka </span><a href="apachekafka.html#SNAPSHOT_RESPONSE_TOPIC" class="hs1">snapshot response topic</a><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">A snapshot is not a representation of a single data file, bur rather represents the current state of ALL of the </span><a href="origin-application.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data files, or at least the subset of those files that has been configured for replication.</span></p>
+    <p class="ps3"><span class="ts4">A snapshot is not a representation of a single data file, bur rather represents the current state of ALL of the </span><a href="originapplication.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data files, or at least the subset of those files that has been configured for replication.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
       <hr class="hline0" />

@@ -5,18 +5,18 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
-<meta name="generator" content="HelpSmith 10.1 (Build 24.1202)" />
-<link type="text/css" rel="stylesheet" href="css/tree.css?b1fab730" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?6b91d189" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?6b91d189" />
-<link type="text/css" rel="stylesheet" href="css/app.css?6b91d189" />
+<meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
+<link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?135ca9d0" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?135ca9d0" />
+<link type="text/css" rel="stylesheet" href="css/app.css?135ca9d0" />
 <script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/tree.min.js?b1fab730"></script>
-<script src="js/tabs.min.js?b1fab730"></script>
-<script src="js/jquery.cookie.js?b1fab730"></script>
-<script src="js/headroom.min.js?b1fab730"></script>
-<script src="js/app.min.js?b1fab730"></script>
-<script src="js/search.min.js?b1fab730"></script>
+<script src="js/tree.min.js?9b90ff95"></script>
+<script src="js/tabs.min.js?9b90ff95"></script>
+<script src="js/jquery.cookie.js?9b90ff95"></script>
+<script src="js/headroom.min.js?9b90ff95"></script>
+<script src="js/app.min.js?135ca9d0"></script>
+<script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
 doAppStart();
@@ -56,7 +56,9 @@ doAppStart();
 				<li class="hs-toc-tab" role="tab">
 					<a href="#hs-toc-panel">Contents</a>
 				</li>
-				
+				<li class="hs-index-tab" role="tab">
+					<a href="#hs-index-panel">Index</a>
+				</li>
 				<li class="hs-search-tab" role="tab">
 					<a href="#hs-search-panel">Search</a>
 				</li>
@@ -65,7 +67,15 @@ doAppStart();
 				<div class="hstabs-panel" id="hs-toc-panel" role="tabpanel">
 					<div id="toc-tree" class="hs-tree"></div>
 				</div>
-				
+				<div class="hstabs-panel" id="hs-index-panel" role="tabpanel">
+					<div class="hs-index-content">
+						<div id="kwd-search-box">
+							<label for="kwd-search" class="sfield-title text-label">Type in the keyword(s) to find:</label>
+							<input type="text" id="kwd-search" autocomplete="off" />
+						</div>
+						<div id ="index-tree" class="hs-tree"></div>
+					</div>
+				</div>
 				<div class="hstabs-panel" id="hs-search-panel" role="tabpanel">
 					<div id="hs-search-content">
 						<div id="search-form">
@@ -97,12 +107,12 @@ doAppStart();
       <table class="align-c tbl0">
         <tr class="row0">
           <td class="cell0">
-            <p class="ps0"><a href="components.html" class="hs0">Components</a><span class="ts0">&nbsp;/ </span><a href="middleware.html" class="hs0">Middleware Components</a><span class="ts0">&nbsp;/ </span></p>
+            <p class="ps0"><a href="components.html" class="hs0">Components</a><span class="ts0">&nbsp;/ </span><a href="middleware.html" class="hs0">Middleware</a><span class="ts0">&nbsp;/ </span></p>
             <h1 class="hd0"><span class="ts1">Apache Kafka</span></h1>
           </td>
           <td class="cell1">
             <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22Apache%20Kafka%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
-            <p class="ps2"><a href="middleware.html" title="Middleware Components" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="redpanda.html" title="Redpanda" class="hs0">Next →</a></p>
+            <p class="ps2"><a href="middleware.html" title="Middleware" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="redpanda.html" title="Redpanda" class="hs0">Next →</a></p>
           </td>
         </tr>
       </table>
@@ -123,13 +133,13 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <h3 class="hd1"><a id="MAIN_EVENT_TOPIC"></a><span class="ts7">Main Event Topic</span></h3>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">The </span><span class="ts5">main event topic</span><span class="ts4">&nbsp;receives messages describing individual data change notifications, where each message indicates that a particular record in a particular file was created, updated, or deleted, and each message includes the current state of the records data, and update messages also include the original state of the records data before the update took place. Each message is assigned a unique offset number within the topic, meaning that the messages are stored in the exact same sequence as the change occurred in the </span><a href="origin-application.html" class="hs1">origin application</a><span class="ts4">.</span></p>
+    <p class="ps3"><span class="ts4">The </span><span class="ts5">main event topic</span><span class="ts4">&nbsp;receives messages describing individual data change notifications, where each message indicates that a particular record in a particular file was created, updated, or deleted, and each message includes the current state of the records data, and update messages also include the original state of the records data before the update took place. Each message is assigned a unique offset number within the topic, meaning that the messages are stored in the exact same sequence as the change occurred in the </span><a href="originapplication.html" class="hs1">origin application</a><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">Other special types of messages also exist, but are not currently implemented. For example, in the future, it will be possible for an </span><a href="origin-application.html" class="hs1">origin application</a><span class="ts4">&nbsp;to send &quot;start transaction&quot; and &quot;stop transaction&quot; messages that can be used to group related messages together into logical transactions, and consumer agents will be able to process those messages together as a real transaction.</span></p>
+    <p class="ps3"><span class="ts4">Other special types of messages also exist, but are not currently implemented. For example, in the future, it will be possible for an </span><a href="originapplication.html" class="hs1">origin application</a><span class="ts4">&nbsp;to send &quot;start transaction&quot; and &quot;stop transaction&quot; messages that can be used to group related messages together into logical transactions, and consumer agents will be able to process those messages together as a real transaction.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <h3 class="hd1"><a id="SNAPSHOT_REQUEST_TOPIC"></a><span class="ts7">Snapshot Request Topic</span></h3>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">The </span><span class="ts5">snapshot request topic</span><span class="ts4">&nbsp;can be written to in order to initiate a new </span><a href="snapshots.html" class="hs1">snapshot</a><span class="ts4">&nbsp;of the </span><a href="origin-application.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data. These requests usually originate from either a target system agent such as a </span><a href="sqlreplicatoragent.html" class="hs1">SQL Replicator Agent</a><span class="ts4">&nbsp;or </span><a href="isamreplicatoragent.html" class="hs1">ISAM Replicator agent</a><span class="ts4">, or from system management tools.</span></p>
+    <p class="ps3"><span class="ts4">The </span><span class="ts5">snapshot request topic</span><span class="ts4">&nbsp;can be written to in order to initiate a new </span><a href="snapshots.html" class="hs1">snapshot</a><span class="ts4">&nbsp;of the </span><a href="originapplication.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data. These requests usually originate from either a target system agent such as a </span><a href="sqlreplicatoragent.html" class="hs1">SQL Replicator Agent</a><span class="ts4">&nbsp;or </span><a href="isamagent.html" class="hs1">ISAM Replicator agent</a><span class="ts4">, or from system management tools.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The consumer of this topic is a </span><a href="snapshotagent.html" class="hs1">snapshot agent</a><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
