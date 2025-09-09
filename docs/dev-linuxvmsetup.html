@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?fb5b0ebb" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?fb5b0ebb" />
-<link type="text/css" rel="stylesheet" href="css/app.css?fb5b0ebb" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?211f8ef6" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?211f8ef6" />
+<link type="text/css" rel="stylesheet" href="css/app.css?211f8ef6" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?fb5b0ebb"></script>
+<script src="js/app.min.js?211f8ef6"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -112,7 +112,7 @@ doAppStart();
           </td>
           <td class="cell1">
             <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22Linux%20VM%20Setup%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
-            <p class="ps2"><a href="dev-databasesetup.html" title="Database Setup" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="dev-launchpadutility.html" title="LaunchPad Utility" class="hs0">Next →</a></p>
+            <p class="ps2"><a href="dev-databasesetup.html" title="Database Setup" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="dev-exportingminiosslcertificate.html" title="Exporting the MinIO SSL Certificate" class="hs0">Next →</a></p>
           </td>
         </tr>
       </table>
@@ -126,7 +126,10 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">To simplify the configuration of the development environment these tools are provided in a pre-configured Linux VM that can be downloaded and run locally using the Windows Subsystem for Linux (WSL).</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts7">Installing WSL</span></h3>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <h3 class="hd1"><span class="ts7">Installing Windows Subsystem for Linux</span></h3>
+    <p>&nbsp;</p>
+    <p class="ps3"><span class="ts4">If you do not already have Windows Subsystem for Linux installed on your Windows development system, follow these steps to install it.</span></p>
     <p>&nbsp;</p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Open an elevated PowerShell window.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -165,9 +168,22 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps8"><span class="ts4">These commands confirm WSL is installed and current, and that you have no distributions installed yet.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">That&rsquo;s it - WSL 2 is now installed and up to date, with no Linux instance on the machine until you explicitly add one later.</span></p>
-    <p><span class="ts15">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts7">Downloading &amp; Installing the Linux VM</span></h3>
+    <p class="ps3"><span class="ts4">That&rsquo;s it - WSL 2 is now installed and up to date, with no Linux instance on the machine until you explicitly add one later. Now proceed with Downloading &amp; Installing the Linux VM.</span></p>
+    <p><span class="ts17">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <h3 class="hd1"><span class="ts7">Updating Windows Subsystem for Linux</span></h3>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">If you already had Windows Subsystem for Linux installed, please ensure that you have the latest version:</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Update WSL components to the newest build:</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps8"><span class="ts11">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps8"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps6"><span class="ts11">wsl --update --web-download</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <h3 class="hd1"><span class="ts7">Downloading &amp; Installing the SIPDEV Linux VM</span></h3>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Decide where you want to store the files for the Linux (WSL) distro and create a directory to host the files. We suggest something like: </span><span class="ts11">C:\VM\WSL\SIPDEV</span><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -194,6 +210,7 @@ doAppStart();
     <p class="ps6"><span class="ts11">wsl -d sipdev -u admin</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The password is </span><span class="ts11">p@ssw0rd</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">

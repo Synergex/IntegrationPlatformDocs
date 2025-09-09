@@ -222,10 +222,20 @@ a[name],a[id] {
   font-family: Consolas;
 }
 .ts14 {
+  font-family: Consolas;
+  font-weight: bold;
+  color: #00b050;
+}
+.ts15 {
+  font-family: Consolas;
+  font-weight: bold;
+  color: Black;
+}
+.ts16 {
   font-family: Tahoma;
   font-weight: bold;
 }
-.ts15 {
+.ts17 {
   font-family: Tahoma;
   font-size: 14pt;
   font-weight: bold;
