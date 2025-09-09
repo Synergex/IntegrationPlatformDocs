@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?211f8ef6" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?211f8ef6" />
-<link type="text/css" rel="stylesheet" href="css/app.css?211f8ef6" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?95d67397" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?95d67397" />
+<link type="text/css" rel="stylesheet" href="css/app.css?95d67397" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?211f8ef6"></script>
+<script src="js/app.min.js?95d67397"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -143,30 +143,30 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Install WSL without a Linux distribution:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts11">wsl --install --no-distribution</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">This installs the Microsoft Store version of WSL, enables prerequisites like VMP as needed, and skips installing Ubuntu (or any distro). If Microsoft Store is blocked, use:</span></p>
+    <p class="ps9"><span class="ts11">wsl --install --no-distribution</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps9"><span class="ts4">This installs the Microsoft Store version of WSL, enables prerequisites like VMP as needed, and skips installing Ubuntu (or any distro). If Microsoft Store is blocked, use:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts11">wsl --install --no-distribution --web-download</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">This pulls from Microsoft&rsquo;s online source instead of the Microsoft Store.</span></p>
+    <p class="ps9"><span class="ts11">wsl --install --no-distribution --web-download</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps9"><span class="ts4">This pulls from Microsoft&rsquo;s online source instead of the Microsoft Store.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">The installer may enable features and then ask for a reboot. Restart Windows if prompted.</span></p>
+    <p class="ps9"><span class="ts4">The installer may enable features and then ask for a reboot. Restart Windows if prompted.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Make sure new distros will default to WSL 2 by setting WSL 2 as the default architecture for any distro installed later:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts11">wsl --set-default-version 2</span></p>
+    <p class="ps9"><span class="ts11">wsl --set-default-version 2</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Update WSL components to the newest build:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts11">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
+    <p class="ps9"><span class="ts11">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps9"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps6"><span class="ts11">wsl --update --web-download</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Verify the install (and that no distro is present)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts11">wsl --version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Shows WSL version, kernel, WSLg, etc.</span><br /><span class="ts11">wsl --status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Quick status overview</span><br /><span class="ts11">wsl -l -v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Lists installed distros (should say none)</span></p>
+    <p class="ps9"><span class="ts11">wsl --version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Shows WSL version, kernel, WSLg, etc.</span><br /><span class="ts11">wsl --status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Quick status overview</span><br /><span class="ts11">wsl -l -v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Lists installed distros (should say none)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">These commands confirm WSL is installed and current, and that you have no distributions installed yet.</span></p>
+    <p class="ps9"><span class="ts4">These commands confirm WSL is installed and current, and that you have no distributions installed yet.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">That&rsquo;s it - WSL 2 is now installed and up to date, with no Linux instance on the machine until you explicitly add one later. Now proceed with Downloading &amp; Installing the Linux VM.</span></p>
     <p><span class="ts17">&nbsp;</span></p>
@@ -177,8 +177,8 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Update WSL components to the newest build:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts11">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
+    <p class="ps9"><span class="ts11">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps9"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps6"><span class="ts11">wsl --update --web-download</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
