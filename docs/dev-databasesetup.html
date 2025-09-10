@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?fa926657" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?fa926657" />
-<link type="text/css" rel="stylesheet" href="css/app.css?fa926657" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/app.css?d53c98a9" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?fa926657"></script>
+<script src="js/app.min.js?d53c98a9"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -112,7 +112,7 @@ doAppStart();
           </td>
           <td class="cell1">
             <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22Database%20Setup%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
-            <p class="ps2"><a href="dev-initialsolutionbuild.html" title="Initial Build" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="dev-linuxvmsetup.html" title="Linux VM Setup" class="hs0">Next →</a></p>
+            <p class="ps2"><a href="dev-initialsolutionbuild.html" title="Building the Software" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="dev-linuxvmsetup.html" title="Linux VM Setup" class="hs0">Next →</a></p>
           </td>
         </tr>
       </table>
@@ -122,16 +122,16 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">You can do this in one of two ways:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts7">Database Setup using LaunchPad</span></h3>
+    <h3 class="hd1"><span class="ts11">Database Setup using LaunchPad</span></h3>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">One of the functions of the LaunchPad utility allows you to verify the database details and access credentials defined in your current profile, checking that the user accounts exist, have the specified passwords, the database exists, and also that various required database options and settings are correctly configured.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">In the development environment we generally work in a profile named DEVELOPMENT. The configuration options for this profile can be found in Solution Items\config\DEVELOPMENT\MasterConfig.json and should look something like this:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><img width="428" height="425" alt="" src="images/databaseconfig_1_configuration.png" /></p>
+    <p class="ps9"><img width="428" height="425" alt="" src="images/databaseconfig_1_configuration.png" /></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">Before proceeding, you should check that the </span><span class="ts11">AdminUser</span><span class="ts4">&nbsp;and </span><span class="ts11">AdminPassword</span><span class="ts4">&nbsp;properties are correct for your database. If you fail to do this, the Database Configuration Utility will not be able to connect to your SQL Server and you will have to configure the database manually.</span></p>
-    <p class="ps3"><span class="ts16">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">Before proceeding, you should check that the </span><span class="ts12">AdminUser</span><span class="ts4">&nbsp;and </span><span class="ts12">AdminPassword</span><span class="ts4">&nbsp;properties are correct for your database. If you fail to do this, the Database Configuration Utility will not be able to connect to your SQL Server and you will have to configure the database manually.</span></p>
+    <p class="ps3"><span class="ts8">&nbsp;</span></p>
     <p class="ps3"><span class="ts5">IMPORTANT:</span><span class="ts4">&nbsp;If instead you chose to alter the profile configuration to match your database, please DO NOT check that change in!</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Once you have verified the admin credentials, proceed as follows:</span></p>
@@ -140,40 +140,44 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">From the LaunchPad menu, select Tools &gt; Database Configuration Utility.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts4">Assuming your SQL Server instance is available, and the credentials for the database administrator user are correct in the current profile, and the database associated with the current profile does not exist, you will see a dialog asking whether to create it:</span></p>
+    <p class="ps8"><span class="ts4">Assuming your SQL Server instance is available, and the credentials for the database administrator user are correct in the current profile, and the database associated with the current profile does not exist, you will see a dialog asking whether to create it:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><img width="722" height="243" alt="" src="images/databaseconfig_2_createdatabase.png" /></p>
+    <p class="ps8"><img width="722" height="243" alt="" src="images/databaseconfig_2_createdatabase.png" /></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts4">If you see this dialog, click Yes to create the database.</span></p>
+    <p class="ps8"><span class="ts4">If you see this dialog, click Yes to create the database.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">If the database user account defined in the profile configuration does not exist in the database, you will see a dialog asking whether to create it:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><img width="724" height="238" alt="" src="images/databaseconfig_3_createuser.png" /></p>
+    <p class="ps8"><img width="724" height="238" alt="" src="images/databaseconfig_3_createuser.png" /></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts4">If you see this dialog, click Yes to create the user account.</span></p>
-    <p class="ps7"><span class="ts3">&nbsp;</span></p>
+    <p class="ps8"><span class="ts4">If you see this dialog, click Yes to create the user account.</span></p>
+    <p class="ps8"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Now you should see the main database configuration dialog that shows the state of various database options and settings that are required by the SQL Agent. The first time in it should look like this:</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><img width="721" height="236" alt="" src="images/databaseconfig_4_applyoptions.png" /><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps8"><img width="721" height="236" alt="" src="images/databaseconfig_4_applyoptions.png" /><br /><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Click the Apply Configuration button to configure the database for use with the SQL Agent. If all goes well you should see this:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><img width="720" height="236" alt="" src="images/databaseconfig_5_optionsapplied.png" /></p>
+    <p class="ps8"><img width="720" height="236" alt="" src="images/databaseconfig_5_optionsapplied.png" /></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">Your database is now correctly configured to work with the SQL Agent.</span></p>
+    <p class="ps9"><span class="ts4">Your database is now correctly configured to work with the SQL Agent.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts7">Manual Database Setup</span></h3>
+    <h3 class="hd1"><span class="ts11">Manual Database Setup</span></h3>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Use Visual Studio to open the solution </span><span class="ts11">IntegrationPlatform.sln</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Use Visual Studio to open the solution </span><span class="ts12">IntegrationPlatform.sln</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Use Server Explorer to connect to your SQL Server.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Using Server Explorer open and execute the SQL script </span><span class="ts11">Solution Items\sql\CreateDatabase.sql</span><span class="ts4">&nbsp;which creates a SQL Server user account and database.</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Using Server Explorer open and execute the SQL script </span><span class="ts12">Solution Items\sql\CreateDatabase.sql</span><span class="ts4">&nbsp;which creates a SQL Server user account and database.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts11">Username: KafkaReplicator</span></p>
-    <p class="ps6"><span class="ts11">Password: p@ssw0rd</span></p>
-    <p class="ps6"><span class="ts11">Database: KafkaReplication</span></p>
+    <p class="ps7"><span class="ts12">Username: KafkaReplicator</span></p>
+    <p class="ps7"><span class="ts12">Password: p@ssw0rd</span></p>
+    <p class="ps7"><span class="ts12">Database: KafkaReplication</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Use Server Explorer to open and execute the SQL script </span><span class="ts11">Solution Items\sql\ParquetSupportSetup.sql</span><span class="ts4">&nbsp;which configures various things in the database to enable support for working with Parquet files.</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Use Server Explorer to open and execute the SQL script </span><span class="ts12">Solution Items\sql\ParquetSupportSetup.sql</span><span class="ts4">&nbsp;which configures various things in the database to enable support for working with Parquet files.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><a href="dev-initialconfiguration.html" title="Initial Configuration" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="dev-initialsolutionbuild.html" title="Building the Software" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="dev-linuxvmsetup.html" title="Linux VM Setup" class="hs2">Next</a></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
     </div>

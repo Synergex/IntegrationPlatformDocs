@@ -192,48 +192,48 @@ a[name],a[id] {
 }
 .ts7 {
   font-family: Tahoma;
-  font-size: 13pt;
   font-weight: bold;
-  color: Black;
 }
 .ts8 {
+  font-family: Tahoma;
+  font-weight: bold;
+}
+.ts9 {
+  font-family: Tahoma;
+}
+.ts10 {
   font-family: Tahoma;
   font-size: 16pt;
   font-weight: bold;
   color: Black;
 }
-.ts9 {
-  font-family: Tahoma;
-  font-weight: bold;
-}
-.ts10 {
-  font-family: Tahoma;
-}
 .ts11 {
-  font-family: Consolas;
+  font-family: Tahoma;
+  font-size: 13pt;
+  font-weight: bold;
   color: Black;
 }
 .ts12 {
+  font-family: Consolas;
+  color: Black;
+}
+.ts13 {
   font-family: Tahoma;
   text-decoration: underline;
   color: Black;
 }
-.ts13 {
-  font-family: Consolas;
-}
 .ts14 {
   font-family: Consolas;
-  font-weight: bold;
-  color: #00b050;
 }
 .ts15 {
   font-family: Consolas;
   font-weight: bold;
-  color: Black;
+  color: #00b050;
 }
 .ts16 {
-  font-family: Tahoma;
+  font-family: Consolas;
   font-weight: bold;
+  color: Black;
 }
 .ts17 {
   font-family: Tahoma;
@@ -250,6 +250,14 @@ a[name],a[id] {
   font-family: Tahoma;
   text-decoration: underline;
   color: Blue;
+}
+.hs2 {
+  font-family: Tahoma;
+  text-decoration: underline;
+  color: Blue;
+}
+a.hs2:hover {
+  color: Red;
 }
 .hd0 {
   padding-top: 20px;
@@ -279,19 +287,24 @@ a[name],a[id] {
   font-size: 11pt;
 }
 .ps5 {
-  padding-left: 1.01666666666667in;
+  padding-left: 0.5in;
   text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .ps6 {
-  padding-left: 0.5in;
+  padding-left: 1.01666666666667in;
+  text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .ps7 {
-  padding-left: 0.508333333333333in;
+  padding-left: 0.5in;
   font-size: 11pt;
 }
 .ps8 {
+  padding-left: 0.508333333333333in;
+  font-size: 11pt;
+}
+.ps9 {
   padding-left: 0.51in;
   font-size: 11pt;
 }
@@ -304,6 +317,17 @@ a[name],a[id] {
   margin: 8px auto;
   background-color: Silver;
   border-style: none;
+}
+.hline1 {
+  width: 100%;
+  height: 0px;
+  margin: 8px auto;
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: DimGray;
+  border-right-color: #e3e3e3;
+  border-bottom-color: #e3e3e3;
+  border-left-color: DimGray;
 }
 .tbl0 {
   width: 100%;
@@ -332,13 +356,29 @@ a[name],a[id] {
   border-style: none;
 }
 .tbl1 > tbody > tr > td.cell0 {
+  width: 147pt;
+  vertical-align: top;
+  padding: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell1 {
+  width: 665.4pt;
+  vertical-align: top;
+  padding: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell2 {
   width: 1.21in;
   vertical-align: top;
   border-style: solid;
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell1 {
+.tbl1 > tbody > tr > td.cell3 {
   width: 5.07in;
   vertical-align: top;
   border-style: solid;

@@ -1,21 +1,21 @@
 ﻿<!DOCTYPE html>
 <html>
 <head lang="en">
-<title>Setting up SSH access to GitHub</title>
+<title>GitHub SSH Authentication</title>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?fa926657" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?fa926657" />
-<link type="text/css" rel="stylesheet" href="css/app.css?fa926657" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/app.css?d53c98a9" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?fa926657"></script>
+<script src="js/app.min.js?d53c98a9"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -108,11 +108,11 @@ doAppStart();
         <tr class="row0">
           <td class="cell0">
             <p class="ps0"><a href="developerinformation.html" class="hs0">Developer Information</a><span class="ts0">&nbsp;/ </span><a href="dev-initialconfiguration.html" class="hs0">Initial Configuration</a><span class="ts0">&nbsp;/ </span></p>
-            <h1 class="hd0"><span class="ts1">Setting up SSH access to GitHub</span></h1>
+            <h1 class="hd0"><span class="ts1">GitHub SSH Authentication</span></h1>
           </td>
           <td class="cell1">
-            <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22Setting%20up%20SSH%20access%20to%20GitHub%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
-            <p class="ps2"><a href="dev-reccomendedsoftware.html" title="Reccomended Software" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="dev-cloninggitrepository.html" title="Cloning the Git Repository" class="hs0">Next →</a></p>
+            <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22GitHub%20SSH%20Authentication%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
+            <p class="ps2"><a href="dev-reccomendedsoftware.html" title="Optional Software" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="dev-cloninggitrepository.html" title="Cloning the Git Repository" class="hs0">Next →</a></p>
           </td>
         </tr>
       </table>
@@ -126,39 +126,42 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Determine whether you already have a certificate you can use:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts11">ls -al ~/.ssh</span></p>
+    <p class="ps7"><span class="ts12">ls -al ~/.ssh</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">Look for </span><span class="ts11">id_ed25519.pub</span><span class="ts4">&nbsp;(preferred) or </span><span class="ts11">id_rsa.pub</span><span class="ts4">&nbsp;(also supported). If you already have a key, you can move on to the &quot;Copy the content&quot; step below.</span></p>
-    <p class="ps8"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">Look for </span><span class="ts12">id_ed25519.pub</span><span class="ts4">&nbsp;(preferred) or </span><span class="ts12">id_rsa.pub</span><span class="ts4">&nbsp;(also supported). If you already have a key, you can move on to the &quot;Copy the content&quot; step below.</span></p>
+    <p class="ps9"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Create an ed25519 certificate and add it to your local SSH agent:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts11">ssh-keygen -t ed25519 -C &quot;your@email.com&quot;</span></p>
-    <p class="ps6"><span class="ts11">ssh-add ~/.ssh/id_ed25519</span></p>
+    <p class="ps7"><span class="ts12">ssh-keygen -t ed25519 -C &quot;your@email.com&quot;</span></p>
+    <p class="ps7"><span class="ts12">ssh-add ~/.ssh/id_ed25519</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">If ed25519 is not supported, create an RSA certificate and add it to your local SSH agent:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts11">ssh-keygen -t rsa -b 4096 -C &quot;steve.ives@synergex.com&quot;</span></p>
-    <p class="ps6"><span class="ts11">ssh-add ~/.ssh/id_rsa</span></p>
+    <p class="ps7"><span class="ts12">ssh-keygen -t rsa -b 4096 -C &quot;steve.ives@synergex.com&quot;</span></p>
+    <p class="ps7"><span class="ts12">ssh-add ~/.ssh/id_rsa</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Copy the content of your certificates PUBLIC KEY (the file with the .pub extension) to the clipboard. Display the content using one of these:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts11">cat ~/.ssh/id_ed25519.pub</span></p>
-    <p class="ps6"><span class="ts11">cat ~/.ssh/id_rsa.pub</span></p>
+    <p class="ps7"><span class="ts12">cat ~/.ssh/id_ed25519.pub</span></p>
+    <p class="ps7"><span class="ts12">cat ~/.ssh/id_rsa.pub</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts5">IMPORTANT:</span><span class="ts4">&nbsp;Never share the content of the files without the .pub extension, these are your PRIVATE keys and disclosing them will compromise your security.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">Go to the SSH Keys section of your GitHub profile (if you are logged in to GitHub you can get there directly by going to </span><a href="https://github.com/settings/keys" target="_blank" class="hs1">https://github.com/settings/keys</a><span class="ts4">), and once there, click the </span><span class="ts11">New SSH key</span><span class="ts4">&nbsp;button, enter a name for your key that identifies the system it is from, paste your public key data into the </span><span class="ts11">Key</span><span class="ts4">&nbsp;field, then click the </span><span class="ts11">Add SSH key</span><span class="ts4">&nbsp;button at the bottom of the page.</span></p>
+    <p class="ps3"><span class="ts4">Go to the SSH Keys section of your GitHub profile (if you are logged in to GitHub you can get there directly by going to </span><a href="https://github.com/settings/keys" target="_blank" class="hs1">https://github.com/settings/keys</a><span class="ts4">), and once there, click the </span><span class="ts12">New SSH key</span><span class="ts4">&nbsp;button, enter a name for your key that identifies the system it is from, paste your public key data into the </span><span class="ts12">Key</span><span class="ts4">&nbsp;field, then click the </span><span class="ts12">Add SSH key</span><span class="ts4">&nbsp;button at the bottom of the page.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Back in the Git Bash window, you can test the SSH access:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts11">ssh -T git@github.com</span></p>
+    <p class="ps7"><span class="ts12">ssh -T git@github.com</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">You should see a message similar to this:</span></p>
-    <p class="ps8"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts11">Hi &lt;YourName&gt;! You've successfully authenticated, but GitHub does not provide shell access. </span></p>
-    <p class="ps6"><span class="ts13">&nbsp;</span></p>
+    <p class="ps9"><span class="ts3">&nbsp;</span></p>
+    <p class="ps7"><span class="ts12">Hi &lt;YourName&gt;! You've successfully authenticated, but GitHub does not provide shell access. </span></p>
+    <p class="ps7"><span class="ts14">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Having completed this process you can now clone repositories using the SSH mechanism instead of the HTTPS mechanism.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><a href="dev-initialconfiguration.html" title="Initial Configuration" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="dev-reccomendedsoftware.html" title="Optional Software" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="dev-cloninggitrepository.html" title="Cloning the Git Repository" class="hs2">Next</a></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
     </div>

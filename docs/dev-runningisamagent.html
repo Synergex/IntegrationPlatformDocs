@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?fa926657" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?fa926657" />
-<link type="text/css" rel="stylesheet" href="css/app.css?fa926657" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/app.css?d53c98a9" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?fa926657"></script>
+<script src="js/app.min.js?d53c98a9"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -118,10 +118,15 @@ doAppStart();
       </table>
     </div>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">Three options on the Agents menu allow you to control and interact with the ISAM Agent.</span></p>
+    <p class="ps3"><span class="ts4">The ISAM Agent is a .NET application written in C# and supported on Windows and Linux systems. It monitors the Kafka CDC topic for messages indicating that data has changed, and replicates those changes to SDMS data files, usually on the same host system.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">When the agent is first started and no local data files exist, it checks for the latest snapshot, downloads it, builds the local SDMS files, then begins to replay data change messages from the point in time when the snapshot was taken to the current time. Once that process is complete the agent begins replicating change messages as they are received.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts7">Starting the ISAM Agent</span></h3>
+    <p class="ps3"><span class="ts4">If no previous snapshot exists the agent will request that a new snapshot be created, wait for that snapshot to become available, load the SDMS data files, and then begin replicating as previously described.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">Three options on the LaunchPad Agents menu allow you to control and interact with the ISAM Agent.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <h3 class="hd1"><span class="ts11">Starting the ISAM Agent</span></h3>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The Start ISAM Agent option (Ctrl + I) can be used to launch an instance of the ISAM agent on your local machine. The agent is started as a background process and, when running, its process ID is displayed in the window footer along with the HTTPS port number where its browser UI can be accessed.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -131,13 +136,13 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">When running, the menu option used to start the agent changes to one that can be used to stop the agent, and two additional menu options become available.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts7">Viewing the ISAM Agent Web Console</span></h3>
+    <h3 class="hd1"><span class="ts11">Viewing the ISAM Agent Web Console</span></h3>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">When the agent is running, the ISAM Agent Console (Ctrl + Shift + I) menu option can be used to view the agents console window in a web browser.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">&lt;image&gt;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts7">Viewing the ISAM Agent API Documentation</span></h3>
+    <h3 class="hd1"><span class="ts11">Viewing the ISAM Agent API Documentation</span></h3>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">When the agent is running, the ISAM Agent API (Ctrl + Alt + I) menu option can be used to view the agents Swagger API documentation in a web browser, and interact with the API.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -145,6 +150,7 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><a href="dev-launchpadutility.html" title="LaunchPad Utility" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="dev-launchpadutility.html" title="LaunchPad Utility" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="dev-runningsqlagent.html" title="Running the SQL Agent" class="hs2">Next</a></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
     </div>
