@@ -208,42 +208,42 @@ a[name],a[id] {
   font-family: Tahoma;
 }
 .ts11 {
-  font-family: Tahoma;
-  font-size: 13pt;
-  font-weight: bold;
-  color: Black;
-}
-.ts12 {
   font-family: Consolas;
   color: Black;
 }
-.ts13 {
+.ts12 {
   font-family: Tahoma;
   text-decoration: underline;
   color: Blue;
 }
-.ts14 {
+.ts13 {
   font-family: Consolas;
 }
-.ts15 {
+.ts14 {
   font-family: Tahoma;
   text-decoration: underline;
   color: Black;
 }
-.ts16 {
+.ts15 {
   font-family: Consolas;
   font-weight: bold;
   color: #00b050;
 }
-.ts17 {
+.ts16 {
   font-family: Consolas;
   font-weight: bold;
   color: Black;
 }
-.ts18 {
+.ts17 {
   font-family: Tahoma;
   font-size: 14pt;
   font-weight: bold;
+}
+.ts18 {
+  font-family: Tahoma;
+  font-size: 13pt;
+  font-weight: bold;
+  color: Black;
 }
 .hs0 {
   font-family: 'Segoe UI';
@@ -292,25 +292,29 @@ a.hs2:hover {
   font-size: 11pt;
 }
 .ps5 {
-  padding-left: 1.01666666666667in;
+  padding-left: 0.5in;
   text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .ps6 {
-  padding-left: 0.5in;
+  padding-left: 1.01666666666667in;
+  text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .ps7 {
-  padding-left: 0.508333333333333in;
+  padding-left: 0.5in;
   font-size: 11pt;
 }
 .ps8 {
-  padding-left: 0.51in;
+  padding-left: 0.508333333333333in;
   font-size: 11pt;
 }
 .ps9 {
-  padding-left: 0.5in;
-  text-indent: -0.251968503937008in;
+  padding-left: 0.51in;
+  font-size: 11pt;
+}
+.ps10 {
+  padding-left: 0.508333333333333in;
   font-size: 11pt;
 }
 .block0 {

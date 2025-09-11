@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/app.css?f675f4e7" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/app.css?31cbf67b" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?f675f4e7"></script>
+<script src="js/app.min.js?31cbf67b"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -119,6 +119,10 @@ doAppStart();
     </div>
     <p class="ps3"><span class="ts4">If the SQL Agent is to be used it must be configured using the </span><span class="ts8">SQLAgent</span><span class="ts4">&nbsp;property in </span><span class="ts8">MasterConfig.json</span><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
     <h1 class="hd1"><span class="ts5">Configuration Properties</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div>
@@ -365,47 +369,51 @@ doAppStart();
       </table>
     </div>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
     <h1 class="hd1"><span class="ts5">Example Configuration</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts12">{</span></p>
-    <p class="ps6"><span class="ts12">&nbsp; &quot;SQLAgent&quot;: {</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;AdminPassword&quot;: &quot;p@ssw0rd&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;EnableHostTerminal&quot;: true,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;EnableSwaggerUI&quot;: true,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;EnvironmentVariables&quot;: [</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Name&quot;: &quot;REPLICATOR_DAT&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Value&quot;: &quot;C:\\DEV\\SYNERGEX\\IntegrationPlatform\\dat\\&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Name&quot;: &quot;REPLICATOR_EXPORT&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Value&quot;: &quot;C:\\DEV\\SYNERGEX\\IntegrationPlatform\\dat\\&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Name&quot;: &quot;REPLICATOR_HOOKS_LOGLEVEL&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Value&quot;: &quot;1&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; ],</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;SnapshotProvider&quot;: &quot;RemoteS3&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;SleepTime&quot;: 1,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;SnapshotTimeoutMinutes&quot;: 60,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;StopOnError&quot;: false,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;TableCheckOnStartup&quot;: true,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Tables&quot;: [</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;DEPARTMENT&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;EMPLOYEE&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; ],</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;TempStoragePath&quot;: &quot;C:\\DEV\\SYNERGEX\\IntegrationPlatformData\\temp\\&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;KafkaClientId&quot;: &quot;DEFAULT_REPLICATOR1&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;KafkaConsumerGroup&quot;: &quot;DEFAULT_REPLICATOR&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;LogToFile&quot;: true,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;LogToHost&quot;: true,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;LogFilePath&quot;: &quot;C:\\DEV\\SYNERGEX\\IntegrationPlatform\\log\\&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;LogKeyValues&quot;: false,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;SystemLogging&quot;: false,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;VerboseLogging&quot;: false</span></p>
-    <p class="ps6"><span class="ts12">&nbsp; }</span></p>
-    <p class="ps6"><span class="ts12">}</span></p>
+    <p class="ps7"><span class="ts11">{</span></p>
+    <p class="ps7"><span class="ts11">&nbsp; &quot;SQLAgent&quot;: {</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;AdminPassword&quot;: &quot;p@ssw0rd&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;EnableHostTerminal&quot;: true,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;EnableSwaggerUI&quot;: true,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;EnvironmentVariables&quot;: [</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Name&quot;: &quot;REPLICATOR_DAT&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Value&quot;: &quot;C:\\DEV\\SYNERGEX\\IntegrationPlatform\\dat\\&quot;</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Name&quot;: &quot;REPLICATOR_EXPORT&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Value&quot;: &quot;C:\\DEV\\SYNERGEX\\IntegrationPlatform\\dat\\&quot;</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Name&quot;: &quot;REPLICATOR_HOOKS_LOGLEVEL&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Value&quot;: &quot;1&quot;</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; ],</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;SnapshotProvider&quot;: &quot;RemoteS3&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;SleepTime&quot;: 1,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;SnapshotTimeoutMinutes&quot;: 60,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;StopOnError&quot;: false,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;TableCheckOnStartup&quot;: true,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;Tables&quot;: [</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;DEPARTMENT&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;EMPLOYEE&quot;</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; ],</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;TempStoragePath&quot;: &quot;C:\\DEV\\SYNERGEX\\IntegrationPlatformData\\temp\\&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;KafkaClientId&quot;: &quot;DEFAULT_REPLICATOR1&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;KafkaConsumerGroup&quot;: &quot;DEFAULT_REPLICATOR&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;LogToFile&quot;: true,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;LogToHost&quot;: true,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;LogFilePath&quot;: &quot;C:\\DEV\\SYNERGEX\\IntegrationPlatform\\log\\&quot;,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;LogKeyValues&quot;: false,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;SystemLogging&quot;: false,</span></p>
+    <p class="ps7"><span class="ts11">&nbsp;&nbsp;&nbsp; &quot;VerboseLogging&quot;: false</span></p>
+    <p class="ps7"><span class="ts11">&nbsp; }</span></p>
+    <p class="ps7"><span class="ts11">}</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
       <hr class="hline0" />

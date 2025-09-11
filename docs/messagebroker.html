@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/app.css?f675f4e7" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/app.css?31cbf67b" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?f675f4e7"></script>
+<script src="js/app.min.js?31cbf67b"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -121,7 +121,11 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The job of the Message Broker is to receive event messages from the </span><a href="iohooks.html" class="hs1">I/O Hooks</a><span class="ts4">&nbsp;and forward them to the Kafka </span><a href="apachekafka.html#MAIN_EVENT_TOPIC" class="hs1">main event topic</a><span class="ts4">. But as the Kafka environment is provided by remote network servers, the Message Broker is also responsible for caching change messages locally in the event that Kafka is unavailable, monitoring the environment to determine when Kafka availability is restored, and then replaying those cached messages to Kafka before resuming real-time operations.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h2 class="hd1"><span class="ts2">OpenVMS Cluster Environments</span></h2>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">OpenVMS Cluster Environments</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">If the </span><a href="kafka-configuration.html" class="hs1">origin application</a><span class="ts4">&nbsp;is hosted by an OpenVMS cluster environment consisting of multiple active nodes, then an instance of the Message Broker will run on each of the cluster nodes, but in order to maintain perfect ordering, only one of those processes will ever be active and be responsible for forwarding messages to Kafka. The non-active processes will monitor the active process, and in the event that it fails, one of the other processes will become active. </span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>

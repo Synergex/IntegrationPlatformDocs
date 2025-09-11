@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/app.css?f675f4e7" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/app.css?31cbf67b" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?f675f4e7"></script>
+<script src="js/app.min.js?31cbf67b"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -129,6 +129,13 @@ doAppStart();
     </div>
     <h1 class="hd1"><span class="ts5">Data Replication to Remote SDMS Files</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The I</span><a href="isamagent.html" class="hs1">SAM Agent</a><span class="ts4">&nbsp;can be used to achieve the replication of SDMS or RMS ISAM and Relative data files to a matching set of data files on one or more remote systems.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The primary use cases for doing so include:</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Implementing a phased migration to a new platform.</span></p>
+    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Off-loading workloads from the primary origin system to other environments.</span></p>
+    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Replicating application data to a different system or location for disaster recovery purposes.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
@@ -136,6 +143,38 @@ doAppStart();
     </div>
     <h1 class="hd1"><span class="ts5">Data replication to Microsoft SQL Server</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The </span><a href="sqlreplicatoragent.html" class="hs1">SQL Agent</a><span class="ts4">&nbsp;can be used to facilitate the replication of SDMS or RMS ISAM and Relative data to a Microsoft SQL Server database.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The primary use cases for doing so include:</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Exposing the data in form easily consumable by other home-grown or third-party applications, without any significant impact on the origin system.</span></p>
+    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Data warehousing or other ETL use cases.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Latency</span></h1>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The Streaming Integration Platform is designed to achieve high performance and throughput, resulting in the replication of data in near-to-real-time. But regardless of how small, there is always some amount of latency between changes to the system-of-record data and the replicated data, and this latency can be impacted by the choice of technologies and deployment environments.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The environment is by definition distributed across multiple systems, usually involving at least three different system environments:</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">The origin system.</span></p>
+    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">The Kafka (or Redpanda) environment.</span></p>
+    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">The Target system.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">Ideally the network connections between these environments should be as fast and low latency as possible, but in some cases some or all of these components may be physically separated, and even perhaps be cloud-based. The latency and throughput of the overall solution will of course depend heavily on these factors.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Read-Only Access</span></h1>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">In both of these use cases cases the replicated data should generally be considered to be available for read access only. The exception being if the data is replicated to SDMS files for disaster recovery purposes, and the DR system becomes active, replacing the primary system as the single source of truth for the application.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">If you are consuming the data from client applications and need write access, the recommended solution is to provide that access via a RESTful web services API using the </span><a href="https://www.synergex.com/web-services-framework/" target="_blank" class="hs1">Harmony Core</a><span class="ts4">&nbsp;framework.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">

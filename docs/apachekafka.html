@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/app.css?f675f4e7" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/app.css?31cbf67b" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?f675f4e7"></script>
+<script src="js/app.min.js?31cbf67b"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -127,23 +127,27 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Apache Kafka is built in Java.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h2 class="hd1"><span class="ts2">Kafka Topics</span></h2>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Kafka Topics</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The integration platform uses three Kafka topics, as follows:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><a id="MAIN_EVENT_TOPIC"></a><span class="ts11">Main Event Topic</span></h3>
+    <h2 class="hd1"><a id="MAIN_EVENT_TOPIC"></a><span class="ts2">Main Event Topic</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The </span><span class="ts8">main event topic</span><span class="ts4">&nbsp;receives messages describing individual data change notifications, where each message indicates that a particular record in a particular file was created, updated, or deleted, and each message includes the current state of the records data, and update messages also include the original state of the records data before the update took place. Each message is assigned a unique offset number within the topic, meaning that the messages are stored in the exact same sequence as the change occurred in the </span><a href="kafka-configuration.html" class="hs1">origin application</a><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Other special types of messages also exist, but are not currently implemented. For example, in the future, it will be possible for an </span><a href="kafka-configuration.html" class="hs1">origin application</a><span class="ts4">&nbsp;to send &quot;start transaction&quot; and &quot;stop transaction&quot; messages that can be used to group related messages together into logical transactions, and consumer agents will be able to process those messages together as a real transaction.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><a id="SNAPSHOT_REQUEST_TOPIC"></a><span class="ts11">Snapshot Request Topic</span></h3>
+    <h2 class="hd1"><a id="SNAPSHOT_REQUEST_TOPIC"></a><span class="ts2">Snapshot Request Topic</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The </span><span class="ts8">snapshot request topic</span><span class="ts4">&nbsp;can be written to in order to initiate a new </span><a href="snapshots.html" class="hs1">snapshot</a><span class="ts4">&nbsp;of the </span><a href="kafka-configuration.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data. These requests usually originate from either a target system agent such as a </span><a href="sqlreplicatoragent.html" class="hs1">SQL Replicator Agent</a><span class="ts4">&nbsp;or </span><a href="isamagent.html" class="hs1">ISAM Replicator agent</a><span class="ts4">, or from system management tools.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The consumer of this topic is a </span><a href="snapshotagent.html" class="hs1">snapshot agent</a><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><a id="SNAPSHOT_RESPONSE_TOPIC"></a><span class="ts11">Snapshot Response Topic</span></h3>
+    <h2 class="hd1"><a id="SNAPSHOT_RESPONSE_TOPIC"></a><span class="ts2">Snapshot Response Topic</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The </span><span class="ts8">snapshot response topic</span><span class="ts4">&nbsp;is used by the </span><a href="snapshotagent.html" class="hs1">snapshot agent</a><span class="ts4">&nbsp;to send a completion message back to the originator of a snapshot request once the snapshot has been completed and uploaded to network storage, such as an S3 bucket provided by </span><a href="seaweedfs.html" class="hs1">SeaweedFS</a><span class="ts4">&nbsp;or some other provider.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>

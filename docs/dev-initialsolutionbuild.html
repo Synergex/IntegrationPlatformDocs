@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/app.css?f675f4e7" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/app.css?31cbf67b" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?f675f4e7"></script>
+<script src="js/app.min.js?31cbf67b"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -119,39 +119,50 @@ doAppStart();
     </div>
     <p class="ps3"><span class="ts4">This document describes how to perform a first time full build of the Integration Platform code on Windows.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts11">Open the Visual Studio Solution</span></h3>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Open the Visual Studio Solution</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Start by opening Visual Studio and then opening the solution </span><span class="ts12">IntegrationPlatform.sln</span><span class="ts4">.</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Start by opening Visual Studio and then opening the solution </span><span class="ts11">IntegrationPlatform.sln</span><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts11">Add a Local Package Source</span></h3>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Add a Local Package Source</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The Integration Platform currently uses a couple of unpublished NuGet packages that are provided in the development environment. To access these you must define a custom local package source in Visual Studio:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">From the menu select Tools &gt; NuGet Package Manager &gt; Package Manager Settings.</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">In the left pane select Package Sources.</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">In the upper-right corner of the dialog, click the + button to add a new package source.</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Near the bottom of the dialog enter &quot;Integration Platform&quot; in the Name field, and use the ... button next to the Source field to select your </span><span class="ts12">IntegrationPlatform\LocalNugetPackageSource</span><span class="ts4">&nbsp;directory.</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Near the bottom of the dialog enter &quot;Integration Platform&quot; in the Name field, and use the ... button next to the Source field to select your </span><span class="ts11">IntegrationPlatform\LocalNugetPackageSource</span><span class="ts4">&nbsp;directory.</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Click OK to close the dialog</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts11">Build the Solution</span></h3>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Build the Solution</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">From the menu, select &quot;Build &gt; Build Solution&quot;.</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Watch the progress in the Output window and check that the solution builds correctly.</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">If the solution does not build, go through the usual &quot;SDI nonesense&quot; processes to get it to build (e.g. close and re-open Visual Studio, and any other tricks you are aware of)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h3 class="hd1"><span class="ts11">Build the RUST Applications</span></h3>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Build the RUST Applications</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Several of the main Integration Platform components are written in </span><a href="https://www.rust-lang.org" target="_blank" class="hs1">Rust</a><span class="ts4">&nbsp;and are not built by the Visual Studio solution. To build these:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Open a Windows command prompt and:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts12">cd IntegrationPlatform\rust</span></p>
-    <p class="ps6"><span class="ts12">build</span></p>
+    <p class="ps7"><span class="ts11">cd IntegrationPlatform\rust</span></p>
+    <p class="ps7"><span class="ts11">build</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">It is normal to see a few warnings (displayed in yellow) as the build proceeds. As an indication of a successful build, look for this at the end:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts16">Finished</span><span class="ts17">&nbsp;`release` profile [optimized] target(s) in 3m 56s</span></p>
+    <p class="ps7"><span class="ts15">Finished</span><span class="ts16">&nbsp;`release` profile [optimized] target(s) in 3m 56s</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">

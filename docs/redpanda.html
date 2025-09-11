@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?f675f4e7" />
-<link type="text/css" rel="stylesheet" href="css/app.css?f675f4e7" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?31cbf67b" />
+<link type="text/css" rel="stylesheet" href="css/app.css?31cbf67b" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?f675f4e7"></script>
+<script src="js/app.min.js?31cbf67b"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -125,33 +125,37 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Because it maintains wire compatibility with Kafka, organizations can switch to Redpanda without changing their existing Kafka-based code or tools. Whether you&rsquo;re building event-driven applications, streaming analytics, or data pipelines, Redpanda aims to offer a faster, more resource-efficient, and operationally simpler alternative to Kafka.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h2 class="hd1"><span class="ts2">Production Deployment Configuration</span></h2>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Production Deployment Configuration</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">For a resilient production deployment, Redpanda requires a minimum of three nodes to form a fault-tolerant cluster. This allows Redpanda to maintain quorum-based replication and continue serving data even if one node fails. Each node should be a well-provisioned machine capable of handling storage, CPU, and networking demands associated with event streaming workloads.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts8">Minimum Infrastructure Recommendations:</span></p>
+    <h2 class="hd1"><span class="ts2">Minimum Infrastructure Recommendations:</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Nodes:</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Minimum 3 nodes for high availability.</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Ideally, spread across different availability zones or failure domains if running in the cloud.</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Minimum 3 nodes for high availability.</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Ideally, spread across different availability zones or failure domains if running in the cloud.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">CPU:</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Modern multi-core processors (8+ vCPUs recommended).</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Redpanda is CPU-intensive and benefits from high clock speed and dedicated cores.</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Modern multi-core processors (8+ vCPUs recommended).</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Redpanda is CPU-intensive and benefits from high clock speed and dedicated cores.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Memory:</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">At least 16 GB RAM per node for production.</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Larger memory pools help with caching and reduce disk I/O.</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">At least 16 GB RAM per node for production.</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Larger memory pools help with caching and reduce disk I/O.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Storage:</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">NVMe SSDs strongly recommended for low-latency writes and high throughput.</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">At least 1 TB of disk space per node, depending on retention and workload.</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">NVMe SSDs strongly recommended for low-latency writes and high throughput.</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">At least 1 TB of disk space per node, depending on retention and workload.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Network:</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Low-latency, high-bandwidth network (10 Gbps+ is ideal).</span></p>
-    <p class="ps5"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Nodes must be able to communicate with each other over TCP for Raft replication.</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Low-latency, high-bandwidth network (10 Gbps+ is ideal).</span></p>
+    <p class="ps6"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Nodes must be able to communicate with each other over TCP for Raft replication.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts8">Additional Considerations</span></p>
+    <h2 class="hd1"><span class="ts2">Additional Considerations</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">No ZooKeeper Needed: Redpanda does not use ZooKeeper or KRaft, simplifying the architecture.</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Data Replication: Set the replication factor to at least 3 for production topics to ensure durability.</span></p>
