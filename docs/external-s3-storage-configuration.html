@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+<title>External S3 Storage Configuration</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+<meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
+<link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?b2f5ee37" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?b2f5ee37" />
+<link type="text/css" rel="stylesheet" href="css/app.css?b2f5ee37" />
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/tree.min.js?9b90ff95"></script>
+<script src="js/tabs.min.js?9b90ff95"></script>
+<script src="js/jquery.cookie.js?9b90ff95"></script>
+<script src="js/headroom.min.js?9b90ff95"></script>
+<script src="js/app.min.js?b2f5ee37"></script>
+<script src="js/search.min.js?9b90ff95"></script>
+<!-- Web Help Topic -->
+<script>
+doAppStart();
+</script>
+</head>
+<body>
+	<header>
+		<div id="hs-header-d">
+			<div id="hs-content-h">
+  <div id="hs-wrapper-h">
+    
+    <span id="hs-title-h">Synergex Integration Platform</span>
+  </div>
+</div>
+		</div>
+		<div id="hs-header-m">
+			<div id="hs-content-m">
+  <div id="hs-area-left">
+    <div id="hs-menu" class="hs-menu-toggle">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </div>
+  </div>
+  <div id="hs-area-center">
+    <span id="hs-title-m">Synergex Integration Platform</span>
+  </div>
+  <div id="hs-area-right">
+    
+  </div>
+</div>
+		</div>
+	</header>
+	<nav id="hs-nav">
+		<div id="hs-nav-content">
+			<ul id="nav-tabs" role="tablist">
+				<li class="hs-toc-tab" role="tab">
+					<a href="#hs-toc-panel">Contents</a>
+				</li>
+				<li class="hs-index-tab" role="tab">
+					<a href="#hs-index-panel">Index</a>
+				</li>
+				<li class="hs-search-tab" role="tab">
+					<a href="#hs-search-panel">Search</a>
+				</li>
+			</ul>
+			<div id="tabs-panels">
+				<div class="hstabs-panel" id="hs-toc-panel" role="tabpanel">
+					<div id="toc-tree" class="hs-tree"></div>
+				</div>
+				<div class="hstabs-panel" id="hs-index-panel" role="tabpanel">
+					<div class="hs-index-content">
+						<div id="kwd-search-box">
+							<label for="kwd-search" class="sfield-title text-label">Type in the keyword(s) to find:</label>
+							<input type="text" id="kwd-search" autocomplete="off" />
+						</div>
+						<div id ="index-tree" class="hs-tree"></div>
+					</div>
+				</div>
+				<div class="hstabs-panel" id="hs-search-panel" role="tabpanel">
+					<div id="hs-search-content">
+						<div id="search-form">
+							<label for="squery" class="sfield-title text-label">Enter your search term:</label>
+							<div id="search-box">
+								<div class="search-container">
+									<input type="text" id="squery" autocomplete="off">
+								</div>
+								<div class="search-btn" title="Search"></div>
+							</div>
+							<div id="options-box">
+								<span class="text-label">Match:</span>
+								<input type="radio" id="anywords" name="match" value="anywords" checked="checked"><label for="anywords" class="text-label">Any words</label>
+								<input type="radio" id="phrase" name="match" value="phrase"><label for="phrase" class="text-label">Phrase</label>
+							</div>
+						</div>
+						<div id="search-result"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</nav>
+		<div id="hs-content">
+			<main>
+				<article>
+					<div id="topic-content">
+  <div id="content-box" class="page0">
+    <div class="block0">
+      <table class="align-c tbl0">
+        <tr class="row0">
+          <td class="cell0">
+            <p class="ps0"><a href="configuration.html" class="hs0">Configuration</a><span class="ts0">&nbsp;/ </span></p>
+            <h1 class="hd0"><span class="ts1">External S3 Storage Configuration</span></h1>
+          </td>
+          <td class="cell1">
+            <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22External%20S3%20Storage%20Configuration%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
+            <p class="ps2"><a href="email-configuration.html" title="Email Configuration" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="embedded-s3-storage-configuration.html" title="Embedded S3 Storage Configuration" class="hs0">Next →</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">If snapshot data will be stored in an external S3 storage provider then you must provide information about that environment using the </span><span class="ts8">S3StorageExternal </span><span class="ts4">property in </span><span class="ts8">MasterConfig.json</span><span class="ts4">.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <h1 class="hd1"><span class="ts5">Configuration Properties</span></h1>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div>
+      <table class="tbl1">
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts7">Property</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts7">Type</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts7">Description</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Region</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Server</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Port</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">Integer</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Path</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">ConsolePort</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">Integer</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">UseSsl</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">Boolean</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Bucket</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Id</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Key</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <h1 class="hd1"><span class="ts5">Example Configuration</span></h1>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps6"><span class="ts12">{</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;S3StorageExternal&quot;: {</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Region&quot;: &quot;us-west-2&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Server&quot;: &quot;localhost&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Port&quot;: 9000,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Path&quot;: &quot;s3&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;ConsolePort&quot;: 9001,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;UseSsl&quot;: true,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Bucket&quot;: &quot;development&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Id&quot;: &quot;admin&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Key&quot;: &quot;p@ssw0rd&quot;</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; }</span></p>
+    <p class="ps6"><span class="ts12">}</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <p class="ps3"><a href="configuration.html" title="Configuration" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="email-configuration.html" title="Email Configuration" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="embedded-s3-storage-configuration.html" title="Embedded S3 Storage Configuration" class="hs2">Next</a></p>
+    <div class="hr-wrapper">
+      <hr class="hline1" />
+    </div>
+    <p class="ps0"><span class="ts0">Copyright &copy; 2025 Synergex International, Inc.</span></p>
+  </div>
+</div>
+				</article>
+			</main>
+		</div>
+		
+</body>
+</html>

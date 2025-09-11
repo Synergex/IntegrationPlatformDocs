@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head lang="en">
-<title>SQL Agent</title>
+<title>Embedded S3 Storage Configuration</title>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
@@ -107,27 +107,87 @@ doAppStart();
       <table class="align-c tbl0">
         <tr class="row0">
           <td class="cell0">
-            <p class="ps0"><a href="components.html" class="hs0">Components</a><span class="ts0">&nbsp;/ </span></p>
-            <h1 class="hd0"><span class="ts1">SQL Agent</span></h1>
+            <p class="ps0"><a href="configuration.html" class="hs0">Configuration</a><span class="ts0">&nbsp;/ </span></p>
+            <h1 class="hd0"><span class="ts1">Embedded S3 Storage Configuration</span></h1>
           </td>
           <td class="cell1">
-            <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22SQL%20Agent%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
-            <p class="ps2"><a href="isamagent.html" title="ISAM Agent" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="installationandconfiguration.html" title="Installation" class="hs0">Next →</a></p>
+            <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22Embedded%20S3%20Storage%20Configuration%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
+            <p class="ps2"><a href="external-s3-storage-configuration.html" title="External S3 Storage Configuration" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="file-mapping-configuration.html" title="File Mapping Configuration" class="hs0">Next →</a></p>
           </td>
         </tr>
       </table>
     </div>
-    <p class="ps3"><span class="ts4">The </span><span class="ts8">SQL Agent</span><span class="ts4">&nbsp;is a process that runs on a </span><a href="targetsystems.html" class="hs1">target system</a><span class="ts4">&nbsp;and is responsible for consuming change messages from the Kafka </span><a href="apachekafka.html#MAIN_EVENT_TOPIC" class="hs1">CDC topic</a><span class="ts4">, transforming the messages data into a usable form, and then reproducing the event described by the message in the table of a Microsoft SQL Server database, usually present on the same system.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">In the event that the SQL Agent determines that it has been started for the first time in a new environment, it will send a </span><a href="snapshots.html" class="hs1">snapshot</a><span class="ts4">&nbsp;request to the </span><a href="snapshotagent.html" class="hs1">snapshot agent</a><span class="ts4">&nbsp;via the </span><a href="apachekafka.html#SNAPSHOT_REQUEST_TOPIC" class="hs1">snapshot request topic</a><span class="ts4">, and then wait for a response on the </span><a href="apachekafka.html#SNAPSHOT_RESPONSE_TOPIC" class="hs1">snapshot response topic</a><span class="ts4">. Once the response is received, the new snapshot will be downloaded from </span><a href="seaweedfs.html" class="hs1">network storage</a><span class="ts4">&nbsp;and applied to the database, and the agent will then resume processing messages from the </span><a href="apachekafka.html#MAIN_EVENT_TOPIC" class="hs1">main event topic</a><span class="ts4">&nbsp;offset indicated by the snapshot, thus bringing the database fully up to date with the </span><a href="kafka-configuration.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data.</span></p>
+    <p class="ps3"><span class="ts4">If you will be using the ISAM Agent and it's embedded S3 server to store snapshots then you must provide information about that environment using the </span><span class="ts8">S3StorageLocal </span><span class="ts4">property in </span><span class="ts8">MasterConfig.json</span><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">The SQL Agent is a .NET 8 DBL application and is available on Windows and Linux.</span></p>
+    <h1 class="hd1"><span class="ts5">Configuration Properties</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div>
+      <table class="tbl1">
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts7">Property</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts7">Type</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts7">Description</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Url</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">Bucket</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">RootSharedDisk</span></p>
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">String</span></p>
+          </td>
+          <td class="cell4">
+            <p class="ps3"><span class="ts10">&nbsp;</span></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <h1 class="hd1"><span class="ts5">Example Configuration</span></h1>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps6"><span class="ts12">{</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;S3StorageLocal&quot;: {</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Url&quot;: &quot;http://localhost:5126/s3&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Bucket&quot;: &quot;upload&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;RootSharedDisk&quot;: &quot;C:/DEV/SYNERGEX/IntegrationPlatformData/s3&quot;</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; }</span></p>
+    <p class="ps6"><span class="ts12">}</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
     </div>
-    <p class="ps3"><a href="components.html" title="Components" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="isamagent.html" title="ISAM Agent" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="installationandconfiguration.html" title="Installation" class="hs2">Next</a></p>
+    <p class="ps3"><a href="configuration.html" title="Configuration" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="external-s3-storage-configuration.html" title="External S3 Storage Configuration" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="file-mapping-configuration.html" title="File Mapping Configuration" class="hs2">Next</a></p>
     <div class="hr-wrapper">
       <hr class="hline1" />
     </div>
