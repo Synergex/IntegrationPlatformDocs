@@ -184,6 +184,7 @@ a[name],a[id] {
 }
 .ts5 {
   font-family: Tahoma;
+  font-size: 16pt;
   font-weight: bold;
   color: Black;
 }
@@ -197,15 +198,14 @@ a[name],a[id] {
 .ts8 {
   font-family: Tahoma;
   font-weight: bold;
+  color: Black;
 }
 .ts9 {
   font-family: Tahoma;
+  font-weight: bold;
 }
 .ts10 {
   font-family: Tahoma;
-  font-size: 16pt;
-  font-weight: bold;
-  color: Black;
 }
 .ts11 {
   font-family: Tahoma;
@@ -220,22 +220,27 @@ a[name],a[id] {
 .ts13 {
   font-family: Tahoma;
   text-decoration: underline;
-  color: Black;
+  color: Blue;
 }
 .ts14 {
-  font-family: Consolas;
+  font-family: Tahoma;
+  text-decoration: underline;
+  color: Black;
 }
 .ts15 {
   font-family: Consolas;
-  font-weight: bold;
-  color: #00b050;
 }
 .ts16 {
   font-family: Consolas;
   font-weight: bold;
-  color: Black;
+  color: #00b050;
 }
 .ts17 {
+  font-family: Consolas;
+  font-weight: bold;
+  color: Black;
+}
+.ts18 {
   font-family: Tahoma;
   font-size: 14pt;
   font-weight: bold;
@@ -313,13 +318,6 @@ a.hs2:hover {
 }
 .hline0 {
   width: 100%;
-  height: 1px;
-  margin: 8px auto;
-  background-color: Silver;
-  border-style: none;
-}
-.hline1 {
-  width: 100%;
   height: 0px;
   margin: 8px auto;
   border-style: solid;
@@ -328,6 +326,13 @@ a.hs2:hover {
   border-right-color: #e3e3e3;
   border-bottom-color: #e3e3e3;
   border-left-color: DimGray;
+}
+.hline1 {
+  width: 100%;
+  height: 1px;
+  margin: 8px auto;
+  background-color: Silver;
+  border-style: none;
 }
 .tbl0 {
   width: 100%;
@@ -372,13 +377,37 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell2 {
+  width: 165.6pt;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell3 {
+  width: 124.2pt;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell4 {
+  width: 518.4pt;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell5 {
   width: 1.21in;
   vertical-align: top;
   border-style: solid;
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell3 {
+.tbl1 > tbody > tr > td.cell6 {
   width: 5.07in;
   vertical-align: top;
   border-style: solid;

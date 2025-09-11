@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?d53c98a9" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?d53c98a9" />
-<link type="text/css" rel="stylesheet" href="css/app.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?103d50bf" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?103d50bf" />
+<link type="text/css" rel="stylesheet" href="css/app.css?103d50bf" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?d53c98a9"></script>
+<script src="js/app.min.js?103d50bf"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -112,22 +112,24 @@ doAppStart();
           </td>
           <td class="cell1">
             <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22SQL%20Agent%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
-            <p class="ps2"><a href="isamagent.html" title="ISAM Agent" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="installationandconfiguration.html" title="Installation &amp; Configuration" class="hs0">Next →</a></p>
+            <p class="ps2"><a href="isamagent.html" title="ISAM Agent" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="installationandconfiguration.html" title="Installation" class="hs0">Next →</a></p>
           </td>
         </tr>
       </table>
     </div>
-    <p class="ps3"><span class="ts4">The </span><span class="ts5">SQL Agent</span><span class="ts4">&nbsp;is a process that runs on a </span><a href="targetsystems.html" class="hs1">target system</a><span class="ts4">&nbsp;and is responsible for consuming change messages from the Kafka </span><a href="apachekafka.html#MAIN_EVENT_TOPIC" class="hs1">CDC topic</a><span class="ts4">, transforming the messages data into a usable form, and then reproducing the event described by the message in the table of a Microsoft SQL Server database, usually present on the same system.</span></p>
+    <p class="ps3"><span class="ts4">The </span><span class="ts8">SQL Agent</span><span class="ts4">&nbsp;is a process that runs on a </span><a href="targetsystems.html" class="hs1">target system</a><span class="ts4">&nbsp;and is responsible for consuming change messages from the Kafka </span><a href="apachekafka.html#MAIN_EVENT_TOPIC" class="hs1">CDC topic</a><span class="ts4">, transforming the messages data into a usable form, and then reproducing the event described by the message in the table of a Microsoft SQL Server database, usually present on the same system.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">In the event that the SQL Agent determines that it has been started for the first time in a new environment, it will send a </span><a href="snapshots.html" class="hs1">snapshot</a><span class="ts4">&nbsp;request to the </span><a href="snapshotagent.html" class="hs1">snapshot agent</a><span class="ts4">&nbsp;via the </span><a href="apachekafka.html#SNAPSHOT_REQUEST_TOPIC" class="hs1">snapshot request topic</a><span class="ts4">, and then wait for a response on the </span><a href="apachekafka.html#SNAPSHOT_RESPONSE_TOPIC" class="hs1">snapshot response topic</a><span class="ts4">. Once the response is received, the new snapshot will be downloaded from </span><a href="seaweedfs.html" class="hs1">network storage</a><span class="ts4">&nbsp;and applied to the database, and the agent will then resume processing messages from the </span><a href="apachekafka.html#MAIN_EVENT_TOPIC" class="hs1">main event topic</a><span class="ts4">&nbsp;offset indicated by the snapshot, thus bringing the database fully up to date with the </span><a href="originapplication.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data.</span></p>
+    <p class="ps3"><span class="ts4">In the event that the SQL Agent determines that it has been started for the first time in a new environment, it will send a </span><a href="snapshots.html" class="hs1">snapshot</a><span class="ts4">&nbsp;request to the </span><a href="snapshotagent.html" class="hs1">snapshot agent</a><span class="ts4">&nbsp;via the </span><a href="apachekafka.html#SNAPSHOT_REQUEST_TOPIC" class="hs1">snapshot request topic</a><span class="ts4">, and then wait for a response on the </span><a href="apachekafka.html#SNAPSHOT_RESPONSE_TOPIC" class="hs1">snapshot response topic</a><span class="ts4">. Once the response is received, the new snapshot will be downloaded from </span><a href="seaweedfs.html" class="hs1">network storage</a><span class="ts4">&nbsp;and applied to the database, and the agent will then resume processing messages from the </span><a href="apachekafka.html#MAIN_EVENT_TOPIC" class="hs1">main event topic</a><span class="ts4">&nbsp;offset indicated by the snapshot, thus bringing the database fully up to date with the </span><a href="kafka-configuration.html" class="hs1">origin applications</a><span class="ts4">&nbsp;data.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The SQL Agent is a .NET 8 DBL application and is available on Windows and Linux.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><a href="components.html" title="Components" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="isamagent.html" title="ISAM Agent" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="installationandconfiguration.html" title="Installation &amp; Configuration" class="hs2">Next</a></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
+    </div>
+    <p class="ps3"><a href="components.html" title="Components" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="isamagent.html" title="ISAM Agent" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="installationandconfiguration.html" title="Installation" class="hs2">Next</a></p>
+    <div class="hr-wrapper">
+      <hr class="hline1" />
     </div>
     <p class="ps0"><span class="ts0">Copyright &copy; 2025 Synergex International, Inc.</span></p>
   </div>

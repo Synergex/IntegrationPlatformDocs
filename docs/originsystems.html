@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?d53c98a9" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?d53c98a9" />
-<link type="text/css" rel="stylesheet" href="css/app.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?103d50bf" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?103d50bf" />
+<link type="text/css" rel="stylesheet" href="css/app.css?103d50bf" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?d53c98a9"></script>
+<script src="js/app.min.js?103d50bf"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -112,24 +112,36 @@ doAppStart();
           </td>
           <td class="cell1">
             <p class="ps1"><a href="mailto:support@yourdomain.com?subject=Comments%20on%20topic%20%22Origin%20Systems%22." class="hs0">Send comments</a><span class="ts0">&nbsp;on this topic</span></p>
-            <p class="ps2"><a href="originapplication.html" title="Origin Applications" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="middle-ware.html" title="Middleware" class="hs0">Next →</a></p>
+            <p class="ps2"><a href="introduction.html" title="Introduction" class="hs0">← Previous</a><span class="ts0">&nbsp;</span><a href="middle-ware.html" title="Middleware" class="hs0">Next →</a></p>
           </td>
         </tr>
       </table>
     </div>
-    <p class="ps3"><span class="ts4">Origin systems are the systems that host an </span><a href="originapplication.html" class="hs1">origin application</a><span class="ts4">&nbsp;and its data, and host the systems </span><a href="iohooks.html" class="hs1">I/O hooks</a><span class="ts4">, a </span><a href="messagebroker.html" class="hs1">message broker</a><span class="ts4">&nbsp;and a </span><a href="iohooks.html" class="hs1">snapshot agent</a><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">An origin system can run a supported version of Microsoft Windows, Linux, or OpenVMS for IA64 systems.</span></p>
+    <p class="ps3"><span class="ts4">An </span><span class="ts4">origin system </span><span class="ts4">is a system that hosts a software application written in DBL, and where that application stores its data in a file-based database using either the Synergy Data Management System (SDMS) on Windows or Linux, or Record Management Services (RMS) under OpenVMS IA64.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The Streaming Integration Platform is not supported on origin systems running on traditional UNIX or OpenVMS Alpha systems because of dependencies on products or libraries that are not available on those platforms.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">To be compatible with the Streaming Integration Platform the original DBL application must be built using DBL version 12.3.1 or higher.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
     <h2 class="hd1"><span class="ts2">Windows Origin System Requirements</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
     <h2 class="hd1"><span class="ts2">Linux Origin System Requirements</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Minimum kernel version: ????</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Platform must support the .NET 8 SDK (or higher)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">The Linux platform must support the .NET 8 SDK (or higher)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
     <h2 class="hd1"><span class="ts2">OpenVMS Origin System Requirements</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Supported only in IA64 environments. Synergy does not support OpenVMS on VAX or X86, and the Integration Platform does not support OpenVMS on Alpha/AXP.</span></p>
@@ -139,17 +151,12 @@ doAppStart();
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">LIBRDKAFKA (open source from VSI)</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">ZeroMQ (open source from VSI)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h2 class="hd1"><span class="ts2">Synergy/DE Requirements</span></h2>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">In addition to the requirements of the specific origin system operating system, these Synergy/DE requirements must also be met.</span></p>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Minimum Synergy version: 12.3.1</span></p>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><a href="introduction.html" title="Introduction" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="originapplication.html" title="Origin Applications" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="middle-ware.html" title="Middleware" class="hs2">Next</a></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
+    </div>
+    <p class="ps3"><a href="introduction.html" title="Introduction" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="introduction.html" title="Introduction" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="middle-ware.html" title="Middleware" class="hs2">Next</a></p>
+    <div class="hr-wrapper">
+      <hr class="hline1" />
     </div>
     <p class="ps0"><span class="ts0">Copyright &copy; 2025 Synergex International, Inc.</span></p>
   </div>

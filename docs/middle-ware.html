@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?d53c98a9" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?d53c98a9" />
-<link type="text/css" rel="stylesheet" href="css/app.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?103d50bf" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?103d50bf" />
+<link type="text/css" rel="stylesheet" href="css/app.css?103d50bf" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?d53c98a9"></script>
+<script src="js/app.min.js?103d50bf"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -118,13 +118,29 @@ doAppStart();
       </table>
     </div>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">Coming soon...</span></p>
+    <h1 class="hd1"><span class="ts5">Messaging Infrastructure</span></h1>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">At the heart of the Streaming Integration Platform is an implementation of </span><a href="apachekafka.html" class="hs1">Apache Kafka</a><span class="ts4">, which is usually deployed using one or more Linux servers. For production, to ensure a resilient environment, a cluster of three or more Linux hosts is generally recommended.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">Rather than actually using Apache Kafka, which is implemented using Java, Synergex recommends using </span><a href="redpanda.html" class="hs1">Redpanda</a><span class="ts4">, which significantly outperforms Apache Kafka.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><a href="introduction.html" title="Introduction" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="originsystems.html" title="Origin Systems" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="targetsystems.html" title="Target Systems" class="hs2">Next</a></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Storage Infrastructure</span></h1>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The Streaming Integration Platform operates around </span><a href="snapshots.html" class="hs1">snapshots</a><span class="ts4">&nbsp;of the original applications data, and those snapshots are generally stored in some type of network storage. The preferred solution is to store snapshots using Amazon S3 compatible storage hosted on the local network.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">There are several ways to achieve this, typically using third party storage providers such as </span><a href="seaweedfs.html" class="hs1">SeaweedFS</a><span class="ts4">&nbsp;or </span><a href="minio.html" class="hs1">MinIO</a><span class="ts4">. And when replicating data using the ISAM Agent, another option is to use an S3 storage provider that is embedded within that agent. Of course it is also possible to use Amazon S3 storage in the cloud, although doing so would introduce significant overhead in terms of the additional latency that would be encountered as a result of Internet communications.</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <p class="ps3"><a href="introduction.html" title="Introduction" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="originsystems.html" title="Origin Systems" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="targetsystems.html" title="Target Systems" class="hs2">Next</a></p>
+    <div class="hr-wrapper">
+      <hr class="hline1" />
     </div>
     <p class="ps0"><span class="ts0">Copyright &copy; 2025 Synergex International, Inc.</span></p>
   </div>

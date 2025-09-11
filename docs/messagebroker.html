@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?d53c98a9" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?d53c98a9" />
-<link type="text/css" rel="stylesheet" href="css/app.css?d53c98a9" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?103d50bf" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?103d50bf" />
+<link type="text/css" rel="stylesheet" href="css/app.css?103d50bf" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?d53c98a9"></script>
+<script src="js/app.min.js?103d50bf"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -117,21 +117,23 @@ doAppStart();
         </tr>
       </table>
     </div>
-    <p class="ps3"><span class="ts4">The </span><span class="ts5">Message Broker</span><span class="ts4">&nbsp;is a local process running on the </span><a href="originsystems.html" class="hs1">origin system</a><span class="ts4">, and it is critical that it is always operating and available whenever any part of the </span><a href="originapplication.html" class="hs1">origin application</a><span class="ts4">&nbsp;is active.</span></p>
+    <p class="ps3"><span class="ts4">The </span><span class="ts8">Message Broker</span><span class="ts4">&nbsp;is a local process running on the </span><a href="originsystems.html" class="hs1">origin system</a><span class="ts4">, and it is critical that it is always operating and available whenever any part of the </span><a href="kafka-configuration.html" class="hs1">origin application</a><span class="ts4">&nbsp;is active.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The job of the Message Broker is to receive event messages from the </span><a href="iohooks.html" class="hs1">I/O Hooks</a><span class="ts4">&nbsp;and forward them to the Kafka </span><a href="apachekafka.html#MAIN_EVENT_TOPIC" class="hs1">main event topic</a><span class="ts4">. But as the Kafka environment is provided by remote network servers, the Message Broker is also responsible for caching change messages locally in the event that Kafka is unavailable, monitoring the environment to determine when Kafka availability is restored, and then replaying those cached messages to Kafka before resuming real-time operations.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <h2 class="hd1"><span class="ts2">OpenVMS Cluster Environments</span></h2>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">If the </span><a href="originapplication.html" class="hs1">origin application</a><span class="ts4">&nbsp;is hosted by an OpenVMS cluster environment consisting of multiple active nodes, then an instance of the Message Broker will run on each of the cluster nodes, but in order to maintain perfect ordering, only one of those processes will ever be active and be responsible for forwarding messages to Kafka. The non-active processes will monitor the active process, and in the event that it fails, one of the other processes will become active. </span></p>
+    <p class="ps3"><span class="ts4">If the </span><a href="kafka-configuration.html" class="hs1">origin application</a><span class="ts4">&nbsp;is hosted by an OpenVMS cluster environment consisting of multiple active nodes, then an instance of the Message Broker will run on each of the cluster nodes, but in order to maintain perfect ordering, only one of those processes will ever be active and be responsible for forwarding messages to Kafka. The non-active processes will monitor the active process, and in the event that it fails, one of the other processes will become active. </span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The Message Broker for Windows and Linux is written in </span><a href="https://www.rust-lang.org" target="_blank" class="hs1">Rust</a><span class="ts4">. The Message Broker for OpenVMS is written in </span><a href="https://products.vmssoftware.com/ccompiler" target="_blank" class="hs1">VMS-C</a><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><a href="components.html" title="Components" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="iohooks.html" title="I/O Hooks" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="apachekafka.html" title="Apache Kafka" class="hs2">Next</a></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
+    </div>
+    <p class="ps3"><a href="components.html" title="Components" class="hs2">Parent</a><span class="ts4">&nbsp;</span><a href="iohooks.html" title="I/O Hooks" class="hs2">Previous</a><span class="ts4">&nbsp;</span><a href="apachekafka.html" title="Apache Kafka" class="hs2">Next</a></p>
+    <div class="hr-wrapper">
+      <hr class="hline1" />
     </div>
     <p class="ps0"><span class="ts0">Copyright &copy; 2025 Synergex International, Inc.</span></p>
   </div>
