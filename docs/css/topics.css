@@ -223,12 +223,12 @@ a[name],a[id] {
   color: Blue;
 }
 .ts14 {
+  font-family: Consolas;
+}
+.ts15 {
   font-family: Tahoma;
   text-decoration: underline;
   color: Black;
-}
-.ts15 {
-  font-family: Consolas;
 }
 .ts16 {
   font-family: Consolas;
@@ -306,6 +306,11 @@ a.hs2:hover {
 }
 .ps8 {
   padding-left: 0.51in;
+  font-size: 11pt;
+}
+.ps9 {
+  padding-left: 0.5in;
+  text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .block0 {
