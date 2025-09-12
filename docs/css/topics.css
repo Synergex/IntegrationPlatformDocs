@@ -292,29 +292,25 @@ a.hs2:hover {
   font-size: 11pt;
 }
 .ps5 {
-  padding-left: 0.5in;
-  text-indent: -0.251968503937008in;
-  font-size: 11pt;
-}
-.ps6 {
   padding-left: 1.01666666666667in;
   text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
-.ps7 {
+.ps6 {
   padding-left: 0.5in;
   font-size: 11pt;
 }
-.ps8 {
+.ps7 {
   padding-left: 0.508333333333333in;
+  font-size: 11pt;
+}
+.ps8 {
+  padding-left: 0.5in;
+  text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .ps9 {
   padding-left: 0.51in;
-  font-size: 11pt;
-}
-.ps10 {
-  padding-left: 0.508333333333333in;
   font-size: 11pt;
 }
 .block0 {
