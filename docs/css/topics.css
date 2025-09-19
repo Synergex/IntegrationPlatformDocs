@@ -221,30 +221,39 @@ a[name],a[id] {
 }
 .ts14 {
   font-family: Tahoma;
+  font-weight: bold;
+  text-decoration: underline;
+  color: Black;
+}
+.ts15 {
+  font-family: 'Courier New';
+}
+.ts16 {
+  font-family: Tahoma;
   text-decoration: underline;
   color: Blue;
 }
-.ts15 {
+.ts17 {
   font-family: Tahoma;
   text-decoration: underline;
   color: Black;
 }
-.ts16 {
+.ts18 {
   font-family: Consolas;
   font-weight: bold;
   color: #00b050;
 }
-.ts17 {
+.ts19 {
   font-family: Consolas;
   font-weight: bold;
   color: Black;
 }
-.ts18 {
+.ts20 {
   font-family: Tahoma;
   font-size: 14pt;
   font-weight: bold;
 }
-.ts19 {
+.ts21 {
   font-family: Tahoma;
   font-size: 13pt;
   font-weight: bold;
@@ -297,17 +306,17 @@ a.hs2:hover {
   font-size: 11pt;
 }
 .ps5 {
-  padding-left: 1.01666666666667in;
+  padding-left: 0.5in;
   text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .ps6 {
-  padding-left: 0.5in;
+  padding-left: 1.01666666666667in;
+  text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .ps7 {
   padding-left: 0.5in;
-  text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
 .ps8 {
@@ -382,7 +391,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell2 {
-  width: 2.3in;
+  width: 115.8pt;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -390,7 +399,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell3 {
-  width: 1.72in;
+  width: 198.6pt;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -398,7 +407,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell4 {
-  width: 7.2in;
+  width: 2.3in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -406,29 +415,45 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell5 {
-  width: 1.21in;
-  vertical-align: top;
-  border-style: solid;
-  border-width: 1px;
-  border-color: Black;
-}
-.tbl1 > tbody > tr > td.cell6 {
-  width: 5.07in;
-  vertical-align: top;
-  border-style: solid;
-  border-width: 1px;
-  border-color: Black;
-}
-.tbl1 > tbody > tr > td.cell7 {
-  width: 90pt;
+  width: 1.72in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: Black;
 }
+.tbl1 > tbody > tr > td.cell6 {
+  width: 7.2in;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell7 {
+  width: 1.21in;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
 .tbl1 > tbody > tr > td.cell8 {
-  width: 329.4pt;
+  width: 5.07in;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell9 {
+  width: 1.25in;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell10 {
+  width: 4.58in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;

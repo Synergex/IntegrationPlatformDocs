@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?4cecfa5c" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?4cecfa5c" />
-<link type="text/css" rel="stylesheet" href="css/app.css?4cecfa5c" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?00c40f5d" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?00c40f5d" />
+<link type="text/css" rel="stylesheet" href="css/app.css?00c40f5d" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?4cecfa5c"></script>
+<script src="js/app.min.js?00c40f5d"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -119,44 +119,44 @@ doAppStart();
     </div>
     <p class="ps3"><span class="ts4">If you will be using the ISAM Agent then you must provide information about the files to be replicated using the </span><span class="ts8">IsamFileMapping</span><span class="ts4">&nbsp;property within </span><span class="ts8">MasterConfig.json</span><span class="ts4">.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps3"><span class="ts4">The </span><a href="isamreplicatorfileinfo.html" class="hs1">ISAMReplicatorFileInfo</a><span class="ts14">&nbsp;</span><span class="ts4">utility can be used to help you generate this information.</span></p>
+    <p class="ps3"><span class="ts4">The </span><a href="isamreplicatorfileinfo.html" class="hs1">ISAMReplicatorFileInfo</a><span class="ts16">&nbsp;</span><span class="ts4">utility can be used to help you generate this information.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <h1 class="hd1"><span class="ts5">Configuration Properties</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div>
       <table class="tbl1">
         <tr class="row0">
-          <td class="cell2">
+          <td class="cell4">
             <p class="ps3"><span class="ts7">Property</span></p>
           </td>
-          <td class="cell3">
+          <td class="cell5">
             <p class="ps3"><span class="ts7">Type</span></p>
           </td>
-          <td class="cell4">
+          <td class="cell6">
             <p class="ps3"><span class="ts7">Description</span></p>
           </td>
         </tr>
         <tr class="row0">
-          <td class="cell2">
+          <td class="cell4">
             <p class="ps3"><span class="ts10">Logicals</span></p>
             <p class="ps3"><span class="ts10">&nbsp;</span></p>
           </td>
-          <td class="cell3">
+          <td class="cell5">
             <p class="ps3"><span class="ts10">String dictionary</span></p>
           </td>
-          <td class="cell4">
+          <td class="cell6">
             <p class="ps3"><span class="ts10">&nbsp;</span></p>
           </td>
         </tr>
         <tr class="row0">
-          <td class="cell2">
+          <td class="cell4">
             <p class="ps3"><span class="ts10">Mappings</span></p>
             <p class="ps3"><span class="ts10">&nbsp;</span></p>
           </td>
-          <td class="cell3">
+          <td class="cell5">
             <p class="ps3"><span class="ts10">Object array</span></p>
           </td>
-          <td class="cell4">
+          <td class="cell6">
             <p class="ps3"><span class="ts10">&nbsp;</span></p>
           </td>
         </tr>
@@ -169,54 +169,54 @@ doAppStart();
     </div>
     <h1 class="hd1"><span class="ts5">Example Configuration</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps6"><span class="ts12">{</span></p>
-    <p class="ps6"><span class="ts12">&nbsp; &quot;IsamFileMapping&quot;: {</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Logicals&quot;: {</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;REPLICATOR_DAT&quot;: &quot;C:/DEV/SYNERGEX/IntegrationPlatformData/replica&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;STOW_DATA&quot;: &quot;C:/DEV/SYNERGEX/IntegrationPlatformData/replica&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;LDATAS&quot;: &quot;C:/DEV/SYNERGEX/IntegrationPlatformData/replica&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; },</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Mappings&quot;: [</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Enabled&quot;: true,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileName&quot;: &quot;DEPARTMENT.ISM&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileSpec&quot;: &quot;REPLICATOR_DAT:DEPARTMENT.ISM&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileType&quot;: &quot;ISAM&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;RecordLength&quot;: 100,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileAttributes&quot;: &quot;FIXED,STATIC_RFA,TBYTE&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;IsamKeys&quot;: [</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=1,LENGTH=15,NAME=\u0022dept_id\u0022,TYPE=ALPHA,ORDER=A,DENSITY=75,NODUPS,NOMODIFY,ASCEND&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=66,LENGTH=6,NAME=\u0022dept_manager\u0022,TYPE=ALPHA,ORDER=A,DENSITY=50,DUPS,ATEND,MODIFY,ASCEND&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;IsamReplicationKeyNum&quot;: 0,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;RequiresReplicationKey&quot;: false,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ReplicationKeyPosition&quot;: 0,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Revision&quot;: 1,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Created&quot;: &quot;20240901000000000000&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Enabled&quot;: true,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileName&quot;: &quot;EMPLOYEE.ISM&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileSpec&quot;: &quot;REPLICATOR_DAT:EMPLOYEE.ISM&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileType&quot;: &quot;ISAM&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;RecordLength&quot;: 300,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileAttributes&quot;: &quot;FIXED,COMPRESS,DENSITY=50,PAGE=1024,TBYTE&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;IsamKeys&quot;: [</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=1,LENGTH=8,NAME=EMP_ID,TYPE=DECIMAL,ORDER=A,DENSITY=50,NODUPS,NOMODIFY&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=49,LENGTH=15,NAME=EMP_DEPT,ASCEND,DENSITY=50,DUPS,ATEND,MODIFY&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=29,LENGTH=20,NAME=EMP_LAST_NAME,TYPE=NOCASE,ORDER=A,DENSITY=50,DUPS,ATEND,MODIFY&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=218,LENGTH=2,NAME=STATE_CODE,TYPE=ALPHA,ORDER=A,DENSITY=50,DUPS,ATEND,MODIFY&quot;,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=220,LENGTH=5,NAME=ZIP_CODE,TYPE=DECIMAL,ORDER=A,DENSITY=50,DUPS,ATEND,MODIFY&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;IsamReplicationKeyNum&quot;: 0,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;RequiresReplicationKey&quot;: false,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ReplicationKeyPosition&quot;: 0,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Revision&quot;: 1,</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Created&quot;: &quot;20240901000000000000&quot;</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
-    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; ]</span></p>
-    <p class="ps6"><span class="ts12">&nbsp; }</span></p>
-    <p class="ps6"><span class="ts12">}</span></p>
+    <p class="ps7"><span class="ts12">{</span></p>
+    <p class="ps7"><span class="ts12">&nbsp; &quot;IsamFileMapping&quot;: {</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Logicals&quot;: {</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;REPLICATOR_DAT&quot;: &quot;C:/DEV/SYNERGEX/IntegrationPlatformData/replica&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;STOW_DATA&quot;: &quot;C:/DEV/SYNERGEX/IntegrationPlatformData/replica&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;LDATAS&quot;: &quot;C:/DEV/SYNERGEX/IntegrationPlatformData/replica&quot;</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; },</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;Mappings&quot;: [</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Enabled&quot;: true,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileName&quot;: &quot;DEPARTMENT.ISM&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileSpec&quot;: &quot;REPLICATOR_DAT:DEPARTMENT.ISM&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileType&quot;: &quot;ISAM&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;RecordLength&quot;: 100,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileAttributes&quot;: &quot;FIXED,STATIC_RFA,TBYTE&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;IsamKeys&quot;: [</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=1,LENGTH=15,NAME=\u0022dept_id\u0022,TYPE=ALPHA,ORDER=A,DENSITY=75,NODUPS,NOMODIFY,ASCEND&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=66,LENGTH=6,NAME=\u0022dept_manager\u0022,TYPE=ALPHA,ORDER=A,DENSITY=50,DUPS,ATEND,MODIFY,ASCEND&quot;</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;IsamReplicationKeyNum&quot;: 0,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;RequiresReplicationKey&quot;: false,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ReplicationKeyPosition&quot;: 0,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Revision&quot;: 1,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Created&quot;: &quot;20240901000000000000&quot;</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Enabled&quot;: true,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileName&quot;: &quot;EMPLOYEE.ISM&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileSpec&quot;: &quot;REPLICATOR_DAT:EMPLOYEE.ISM&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileType&quot;: &quot;ISAM&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;RecordLength&quot;: 300,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;FileAttributes&quot;: &quot;FIXED,COMPRESS,DENSITY=50,PAGE=1024,TBYTE&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;IsamKeys&quot;: [</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=1,LENGTH=8,NAME=EMP_ID,TYPE=DECIMAL,ORDER=A,DENSITY=50,NODUPS,NOMODIFY&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=49,LENGTH=15,NAME=EMP_DEPT,ASCEND,DENSITY=50,DUPS,ATEND,MODIFY&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=29,LENGTH=20,NAME=EMP_LAST_NAME,TYPE=NOCASE,ORDER=A,DENSITY=50,DUPS,ATEND,MODIFY&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=218,LENGTH=2,NAME=STATE_CODE,TYPE=ALPHA,ORDER=A,DENSITY=50,DUPS,ATEND,MODIFY&quot;,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;START=220,LENGTH=5,NAME=ZIP_CODE,TYPE=DECIMAL,ORDER=A,DENSITY=50,DUPS,ATEND,MODIFY&quot;</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;IsamReplicationKeyNum&quot;: 0,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;RequiresReplicationKey&quot;: false,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;ReplicationKeyPosition&quot;: 0,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Revision&quot;: 1,</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Created&quot;: &quot;20240901000000000000&quot;</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; ]</span></p>
+    <p class="ps7"><span class="ts12">&nbsp; }</span></p>
+    <p class="ps7"><span class="ts12">}</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
