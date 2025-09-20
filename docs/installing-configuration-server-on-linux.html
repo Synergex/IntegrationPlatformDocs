@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?00c40f5d" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?00c40f5d" />
-<link type="text/css" rel="stylesheet" href="css/app.css?00c40f5d" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?28921f81" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?28921f81" />
+<link type="text/css" rel="stylesheet" href="css/app.css?28921f81" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?00c40f5d"></script>
+<script src="js/app.min.js?28921f81"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -125,11 +125,11 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The name of the installation file will be as shown below, where </span><span class="ts12">n.n.n-n</span><span class="ts4">&nbsp;is the version number of the product you have downloaded.</span></p>
     <p class="ps3"><span class="ts13">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sip-config-server-n.n.n-n.el10.x86_64.rpm</span></p>
+    <p class="ps6"><span class="ts12">sip-config-server-n.n.n-n.el10.x86_64.rpm</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The installation is started using the package manager, and requires root privileges, like this:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo dnf install sip-config-server-n.n.n-n.el10.x86_64.rpm</span></p>
+    <p class="ps6"><span class="ts12">sudo dnf install sip-config-server-n.n.n-n.el10.x86_64.rpm</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The product will be installed into the directory </span><span class="ts12">/usr/lib/synergex/sip/config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -141,32 +141,32 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">By default the Configuration Server runs on port 5120 and the service should be auto-registered and started by the installer. If you wish to make configuration changes you can do so by editing the configuration file:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">/usr/lib/synergex/sip/config-server</span><span class="ts12">/appsettings.json</span></p>
+    <p class="ps6"><span class="ts12">/usr/lib/synergex/sip/config-server</span><span class="ts12">/appsettings.json</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The default configuration looks like this:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">{</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; &quot;Logging&quot;: {</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;LogLevel&quot;: {</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Default&quot;: &quot;Information&quot;,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Microsoft.AspNetCore&quot;: &quot;Warning&quot;</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; }</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; },</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; &quot;AllowedHosts&quot;: &quot;*&quot;,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; &quot;HttpsPort&quot;: 5120,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; &quot;TlsCertFile&quot;: &quot;ConfigServer.pfx&quot;,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; &quot;TlsCertPassword&quot;: &quot;p@ssw0rd&quot;,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; &quot;WaitForDebuggerAttach&quot;: false,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; &quot;ConfigServer&quot;: {</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;AllowedClients&quot;: [</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sip-isam-agent&quot;,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sip-message-broker&quot;,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sip-snapshot-agent&quot;,</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sip-sql-agent&quot;</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; ],</span></p>
-    <p class="ps7"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;ClientPassword&quot;: &quot;p@ssw0rd&quot;</span></p>
-    <p class="ps7"><span class="ts12">&nbsp; }</span></p>
-    <p class="ps7"><span class="ts12">}</span></p>
+    <p class="ps6"><span class="ts12">{</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;Logging&quot;: {</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;LogLevel&quot;: {</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Default&quot;: &quot;Information&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Microsoft.AspNetCore&quot;: &quot;Warning&quot;</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; },</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;AllowedHosts&quot;: &quot;*&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;HttpsPort&quot;: 5120,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;TlsCertFile&quot;: &quot;ConfigServer.pfx&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;TlsCertPassword&quot;: &quot;p@ssw0rd&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;WaitForDebuggerAttach&quot;: false,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; &quot;ConfigServer&quot;: {</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;AllowedClients&quot;: [</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sip-isam-agent&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sip-message-broker&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sip-snapshot-agent&quot;,</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sip-sql-agent&quot;</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; ],</span></p>
+    <p class="ps6"><span class="ts12">&nbsp;&nbsp;&nbsp; &quot;ClientPassword&quot;: &quot;p@ssw0rd&quot;</span></p>
+    <p class="ps6"><span class="ts12">&nbsp; }</span></p>
+    <p class="ps6"><span class="ts12">}</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">If you wish to change the TCP/IP port number used by the Configuration Server, or the password that must be supplied bu other components in order to use the Configuration Server, then you can do so be changing the values of the </span><span class="ts8">HttpsPort</span><span class="ts4">&nbsp;and </span><span class="ts8">ClientPassword</span><span class="ts4">&nbsp;properties. Note that if you do change either or both of these, you </span><span class="ts8">MUST</span><span class="ts4">&nbsp;also alter that port number in the configuration files of all other components in use in the environment, and then restart those services.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -182,23 +182,23 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">To show the status of the service:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo systemctl status sip-config-server</span></p>
+    <p class="ps6"><span class="ts12">sudo systemctl status sip-config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">To restart the service:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo systemctl restart sip-config-server</span></p>
+    <p class="ps6"><span class="ts12">sudo systemctl restart sip-config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">To stop the service:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo systemctl stop sip-config-server</span></p>
+    <p class="ps6"><span class="ts12">sudo systemctl stop sip-config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">To unregister the service:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo systemctl disable sip-config-server</span></p>
+    <p class="ps6"><span class="ts12">sudo systemctl disable sip-config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">To re-register the service:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo systemctl enable sip-config-server</span></p>
+    <p class="ps6"><span class="ts12">sudo systemctl enable sip-config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
@@ -218,17 +218,17 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">When you are ready to perform the upgrade, stop the service. </span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo systemctl stop sip-config-server</span></p>
+    <p class="ps6"><span class="ts12">sudo systemctl stop sip-config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Execute the installer for the new version. It is not necessary to remove the old version, the installer for the new version will perform an in-place upgrade.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo dnf install sip-config-server-n.n.n-n.el10.x86_64.rpm</span></p>
+    <p class="ps6"><span class="ts12">sudo dnf install sip-config-server-n.n.n-n.el10.x86_64.rpm</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Perform any post upgrade tasks as defined in the release notes.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Restart the service.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo systemctl start sip-config-server</span></p>
+    <p class="ps6"><span class="ts12">sudo systemctl start sip-config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
@@ -242,7 +242,7 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Similar to when the product was installed, removing the product is again achieved using the package manager:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">sudo dnf remove sip-config-server</span></p>
+    <p class="ps6"><span class="ts12">sudo dnf remove sip-config-server</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">

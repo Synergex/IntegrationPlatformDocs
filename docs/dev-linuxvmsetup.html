@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?00c40f5d" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?00c40f5d" />
-<link type="text/css" rel="stylesheet" href="css/app.css?00c40f5d" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?28921f81" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?28921f81" />
+<link type="text/css" rel="stylesheet" href="css/app.css?28921f81" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?00c40f5d"></script>
+<script src="js/app.min.js?28921f81"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -136,38 +136,38 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Check that the Virtual Machine Platform is enabled, and enable if not:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</span></p>
+    <p class="ps6"><span class="ts12">dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Check that the Windows Subsystem for Linux optional Windows component is enabled, and enable if not:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</span></p>
+    <p class="ps6"><span class="ts12">dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Install WSL without a Linux distribution:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts12">wsl --install --no-distribution</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts4">This installs the Microsoft Store version of WSL, enables prerequisites like VMP as needed, and skips installing Ubuntu (or any distro). If Microsoft Store is blocked, use:</span></p>
+    <p class="ps8"><span class="ts12">wsl --install --no-distribution</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps8"><span class="ts4">This installs the Microsoft Store version of WSL, enables prerequisites like VMP as needed, and skips installing Ubuntu (or any distro). If Microsoft Store is blocked, use:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts12">wsl --install --no-distribution --web-download</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts4">This pulls from Microsoft&rsquo;s online source instead of the Microsoft Store.</span></p>
+    <p class="ps8"><span class="ts12">wsl --install --no-distribution --web-download</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps8"><span class="ts4">This pulls from Microsoft&rsquo;s online source instead of the Microsoft Store.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts4">The installer may enable features and then ask for a reboot. Restart Windows if prompted.</span></p>
+    <p class="ps8"><span class="ts4">The installer may enable features and then ask for a reboot. Restart Windows if prompted.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Make sure new distros will default to WSL 2 by setting WSL 2 as the default architecture for any distro installed later:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts12">wsl --set-default-version 2</span></p>
+    <p class="ps8"><span class="ts12">wsl --set-default-version 2</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Update WSL components to the newest build:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts12">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
+    <p class="ps8"><span class="ts12">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps8"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">wsl --update --web-download</span></p>
+    <p class="ps6"><span class="ts12">wsl --update --web-download</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Verify the install (and that no distro is present)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts12">wsl --version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Shows WSL version, kernel, WSLg, etc.</span><br /><span class="ts12">wsl --status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Quick status overview</span><br /><span class="ts12">wsl -l -v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Lists installed distros (should say none)</span></p>
+    <p class="ps8"><span class="ts12">wsl --version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Shows WSL version, kernel, WSLg, etc.</span><br /><span class="ts12">wsl --status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Quick status overview</span><br /><span class="ts12">wsl -l -v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Lists installed distros (should say none)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts4">These commands confirm WSL is installed and current, and that you have no distributions installed yet.</span></p>
+    <p class="ps8"><span class="ts4">These commands confirm WSL is installed and current, and that you have no distributions installed yet.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">That&rsquo;s it - WSL 2 is now installed and up to date, with no Linux instance on the machine until you explicitly add one later. Now proceed with Downloading &amp; Installing the Linux VM.</span></p>
     <p><span class="ts20">&nbsp;</span></p>
@@ -180,10 +180,10 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Update WSL components to the newest build:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts12">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
-    <p class="ps9"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
+    <p class="ps8"><span class="ts12">wsl --update</span><br /><span class="ts3">&nbsp;</span></p>
+    <p class="ps8"><span class="ts4">If the Microsoft Store is blocked and you need a direct download, you can use:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">wsl --update --web-download</span></p>
+    <p class="ps6"><span class="ts12">wsl --update --web-download</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
       <hr class="hline0" />
@@ -202,7 +202,7 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The new WSL VM is named sipdev and should now show up in Windows Terminal, or you can launch it manually:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">wsl -d sipdev</span></p>
+    <p class="ps6"><span class="ts12">wsl -d sipdev</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The Linux VM provides the following tools, and the DEVELOPMENT profile is configured to use those tools on the WSL machine by default.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -212,7 +212,7 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">On startup you should be automatically logged in to the </span><span class="ts12">admin</span><span class="ts4">&nbsp;account, but if for any reason that fails you can login with:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">wsl -d sipdev -u admin</span></p>
+    <p class="ps6"><span class="ts12">wsl -d sipdev -u admin</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The password is </span><span class="ts12">p@ssw0rd</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -225,11 +225,11 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Make sure that the WSL SIPDEV instance is not running</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">wsl --list --running</span></p>
+    <p class="ps6"><span class="ts12">wsl --list --running</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">if necessary</span></p>
+    <p class="ps7"><span class="ts4">if necessary</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">wsl --terminate sipdev</span></p>
+    <p class="ps6"><span class="ts12">wsl --terminate sipdev</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Open the Windows Task Scheduler utility.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -255,11 +255,11 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">With action set to Start a program, set Program/script to:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">wsl.exe</span></p>
+    <p class="ps6"><span class="ts12">wsl.exe</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps8"><span class="ts4">And set Add arguments (optional) to:</span></p>
+    <p class="ps7"><span class="ts4">And set Add arguments (optional) to:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">-d sipdev -- bash -c &quot;while true; do sleep 3600; done&quot;</span></p>
+    <p class="ps6"><span class="ts12">-d sipdev -- bash -c &quot;while true; do sleep 3600; done&quot;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Click the OK button to close the dialog.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -267,11 +267,11 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">With action set to Start a program, set Program/script to:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">powershell.exe</span></p>
+    <p class="ps6"><span class="ts12">powershell.exe</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">And, adjusting the path if necessary, set Add arguments (optional) to:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">C:\DEV\SYNERGEX\IntegrationPlatform\windows\WslPortForwarding.ps1</span></p>
+    <p class="ps6"><span class="ts12">C:\DEV\SYNERGEX\IntegrationPlatform\windows\WslPortForwarding.ps1</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">Click the OK button to close the dialog.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
@@ -285,7 +285,7 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">Click the OK button to create the task, then reboot your system. After logging in, check that the VM instance is running:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps7"><span class="ts12">wsl --list --running</span></p>
+    <p class="ps6"><span class="ts12">wsl --list --running</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>

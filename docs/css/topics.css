@@ -306,24 +306,19 @@ a.hs2:hover {
   font-size: 11pt;
 }
 .ps5 {
-  padding-left: 0.5in;
-  text-indent: -0.251968503937008in;
-  font-size: 11pt;
-}
-.ps6 {
   padding-left: 1.01666666666667in;
   text-indent: -0.251968503937008in;
   font-size: 11pt;
 }
-.ps7 {
+.ps6 {
   padding-left: 0.5in;
   font-size: 11pt;
 }
-.ps8 {
+.ps7 {
   padding-left: 0.508333333333333in;
   font-size: 11pt;
 }
-.ps9 {
+.ps8 {
   padding-left: 0.51in;
   font-size: 11pt;
 }
@@ -391,7 +386,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell2 {
-  width: 115.8pt;
+  width: 1.61in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -399,7 +394,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell3 {
-  width: 198.6pt;
+  width: 2.76in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
