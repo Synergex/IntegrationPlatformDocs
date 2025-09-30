@@ -331,11 +331,6 @@ a.hs2:hover {
   padding-left: 0.51in;
   font-size: 11pt;
 }
-.ps9 {
-  padding-left: 0.5in;
-  text-indent: -0.251968503937008in;
-  font-size: 11pt;
-}
 .block0 {
   padding: 0 0 20px 0;
 }
@@ -489,7 +484,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell13 {
-  width: 3.25in;
+  width: 79.2pt;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -497,7 +492,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell14 {
-  width: 6.88in;
+  width: 320.4pt;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -505,7 +500,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell15 {
-  width: 2.98in;
+  width: 3.25in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -513,6 +508,22 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell16 {
+  width: 6.88in;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell17 {
+  width: 2.98in;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell18 {
   width: 5.29in;
   vertical-align: top;
   padding: 5px;
