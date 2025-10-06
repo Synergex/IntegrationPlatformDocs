@@ -261,11 +261,6 @@ a[name],a[id] {
 }
 .ts22 {
   font-family: Tahoma;
-  color: Black;
-  background-color: #c0504d;
-}
-.ts23 {
-  font-family: Tahoma;
   background-color: #c0504d;
 }
 .hs0 {
@@ -484,7 +479,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell13 {
-  width: 79.2pt;
+  width: 1.1in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -492,7 +487,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell14 {
-  width: 320.4pt;
+  width: 4.45in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;

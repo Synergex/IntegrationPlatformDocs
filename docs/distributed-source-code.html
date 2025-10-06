@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?aec261ca" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?aec261ca" />
-<link type="text/css" rel="stylesheet" href="css/app.css?aec261ca" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?20ede5fc" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?20ede5fc" />
+<link type="text/css" rel="stylesheet" href="css/app.css?20ede5fc" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?aec261ca"></script>
+<script src="js/app.min.js?20ede5fc"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -121,23 +121,29 @@ doAppStart();
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The base environment distributions include the following source code and libraries, necessary for the modification of the origin application to work with the Streaming Integration Platform environment.</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">IOHooksGlobal.dbl (subroutine) - </span><span class="ts11">CHECKED FOR DEPENDENCIES</span><span class="ts4">&nbsp;</span><span class="ts22">CONVERT TO REGULAR SUBROUTINE</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">FileInformation.dbl (class) - </span><span class="ts11">CHECKED FOR DEPENDENCIES</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">ParseFilesConfiguration.dbl (function) - </span><span class="ts11">CHECKED FOR DEPENDENCIES</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">IOHooksKafka.dbl (class) - </span><span class="ts11">CHECKED FOR DEPENDENCIES</span><span class="ts4">&nbsp;</span><span class="ts22">MUST SHIP AS CODE SO CAN BE EXTENDED</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">TimeStamp.dbl (class) - </span><span class="ts11">CHECKED FOR DEPENDENCIES</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">FileTools.dbl (class) - </span><span class="ts11">CHECKED FOR DEPENDENCIES</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">ParseJsonFile.dbl () - </span><span class="ts11">CHECKED FOR DEPENDENCIES</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">KafkaAPI_WL.dbl (functions) - </span><span class="ts11">CHECKED FOR DEPENDENCIES</span></p>
+    <p class="ps3"><span class="ts4">Must ship as source:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <h1 class="hd1"><span class="ts5">Include Files</span></h1>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">IOHookConfigure.dbl (subroutine, adds IOHooksKafka to a channel)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">IOHookGlobal.dbl (subroutine, Optional Global I/O hook, calls IOHookConfigure.dbl)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">IOHooksKafka.dbl (class)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">IOHooksKafka.def (include file)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">IOHooksKafka.def </span><span class="ts22">MUST SHIP AS CODE BECAUSE USED BY I/O HOOKS</span></p>
+    <p class="ps3"><span class="ts4">Shipped libraries (siplib.elb and siplib.dll):</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">FileInformation.dbl (class)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">FileTools.dbl (class)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">GetSqlTypeMapping.dbl (function, used in .NET only)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">KafkaAPI_WL.dbl (functions)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">JsonFormatter.dbl (class)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">ParseFilesConfiguration.dbl (function)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">ParseJsonFile.dbl (function)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">RepositoryTools.dbl (used in class, .NET only)</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">StringTools.dbl (class, used in .NET only)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <h1 class="hd1"><span class="ts5">Utilities</span></h1>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">ISAMReplicatorFileInfo.dbl (DBR, uses FileInformation to parse metadata from ISAM and RELATIVE files)</span></p>
-    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">SQLReplicatorFileInfo.dbl (.NET EXE, uses RepositoryAPI to produce JSON metadata) - </span><span class="ts22">NEEDS DOTNET PUBLISH - SEPERATE PROJECT</span></p>
+    <p class="ps4"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts4">SQLReplicatorFileInfo.dbl (.NET EXE, uses RepositoryAPI to produce JSON metadata)</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <h1 class="hd1"><span class="ts5">Libraries (Windows)</span></h1>
@@ -406,7 +412,7 @@ doAppStart();
             <p class="ps3"><span class="ts10">REPLICATOR_CONFIG:&lt;profile&gt;_FILES.JSON</span></p>
           </td>
           <td class="cell16">
-            <p class="ps3"><span class="ts23">Or is it just REPLICATOR_CONFIG:FILES.JSON now???</span></p>
+            <p class="ps3"><span class="ts22">Or is it just REPLICATOR_CONFIG:FILES.JSON now???</span></p>
           </td>
         </tr>
         <tr class="row0">
