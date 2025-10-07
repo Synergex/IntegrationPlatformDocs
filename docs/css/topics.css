@@ -511,7 +511,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell17 {
-  width: 2.98in;
+  width: 2.50943396226415in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -519,7 +519,15 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell18 {
-  width: 5.29in;
+  width: 1.97169811320755in;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell19 {
+  width: 5.62264150943396in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
