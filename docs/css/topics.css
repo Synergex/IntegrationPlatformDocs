@@ -393,7 +393,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell2 {
-  width: 1.61in;
+  width: 2.93396226415094in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -401,7 +401,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell3 {
-  width: 2.76in;
+  width: 5.95283018867924in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -409,7 +409,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell4 {
-  width: 2.3in;
+  width: 1.61in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -417,7 +417,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell5 {
-  width: 1.72in;
+  width: 2.76in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -425,7 +425,7 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell6 {
-  width: 7.2in;
+  width: 2.3in;
   vertical-align: top;
   padding: 5px;
   border-style: solid;
@@ -433,20 +433,36 @@ a.hs2:hover {
   border-color: Black;
 }
 .tbl1 > tbody > tr > td.cell7 {
+  width: 1.72in;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell8 {
+  width: 7.2in;
+  vertical-align: top;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+}
+.tbl1 > tbody > tr > td.cell9 {
   width: 1.21in;
   vertical-align: top;
   border-style: solid;
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell8 {
+.tbl1 > tbody > tr > td.cell10 {
   width: 5.07in;
   vertical-align: top;
   border-style: solid;
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell9 {
+.tbl1 > tbody > tr > td.cell11 {
   width: 1.42in;
   vertical-align: top;
   padding: 5px;
@@ -454,7 +470,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell10 {
+.tbl1 > tbody > tr > td.cell12 {
   width: 1.35in;
   vertical-align: top;
   padding: 5px;
@@ -462,7 +478,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell11 {
+.tbl1 > tbody > tr > td.cell13 {
   width: 1.25in;
   vertical-align: top;
   padding: 5px;
@@ -470,7 +486,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell12 {
+.tbl1 > tbody > tr > td.cell14 {
   width: 4.58in;
   vertical-align: top;
   padding: 5px;
@@ -478,7 +494,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell13 {
+.tbl1 > tbody > tr > td.cell15 {
   width: 1.1in;
   vertical-align: top;
   padding: 5px;
@@ -486,7 +502,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell14 {
+.tbl1 > tbody > tr > td.cell16 {
   width: 4.45in;
   vertical-align: top;
   padding: 5px;
@@ -494,7 +510,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell15 {
+.tbl1 > tbody > tr > td.cell17 {
   width: 3.25in;
   vertical-align: top;
   padding: 5px;
@@ -502,7 +518,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell16 {
+.tbl1 > tbody > tr > td.cell18 {
   width: 6.88in;
   vertical-align: top;
   padding: 5px;
@@ -510,7 +526,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell17 {
+.tbl1 > tbody > tr > td.cell19 {
   width: 2.50943396226415in;
   vertical-align: top;
   padding: 5px;
@@ -518,7 +534,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell18 {
+.tbl1 > tbody > tr > td.cell20 {
   width: 1.97169811320755in;
   vertical-align: top;
   padding: 5px;
@@ -526,7 +542,7 @@ a.hs2:hover {
   border-width: 1px;
   border-color: Black;
 }
-.tbl1 > tbody > tr > td.cell19 {
+.tbl1 > tbody > tr > td.cell21 {
   width: 5.62264150943396in;
   vertical-align: top;
   padding: 5px;

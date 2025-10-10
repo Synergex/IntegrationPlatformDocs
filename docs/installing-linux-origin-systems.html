@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 <meta name="generator" content="HelpSmith 10.3 (Build 25.721)" />
 <link type="text/css" rel="stylesheet" href="css/tree.css?9b90ff95" />
-<link type="text/css" rel="stylesheet" href="css/topics.css?2b82a72c" />
-<link type="text/css" rel="stylesheet" href="css/apr.css?2b82a72c" />
-<link type="text/css" rel="stylesheet" href="css/app.css?2b82a72c" />
+<link type="text/css" rel="stylesheet" href="css/topics.css?8de5ce67" />
+<link type="text/css" rel="stylesheet" href="css/apr.css?8de5ce67" />
+<link type="text/css" rel="stylesheet" href="css/app.css?8de5ce67" />
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/tree.min.js?9b90ff95"></script>
 <script src="js/tabs.min.js?9b90ff95"></script>
 <script src="js/jquery.cookie.js?9b90ff95"></script>
 <script src="js/headroom.min.js?9b90ff95"></script>
-<script src="js/app.min.js?2b82a72c"></script>
+<script src="js/app.min.js?8de5ce67"></script>
 <script src="js/search.min.js?9b90ff95"></script>
 <!-- Web Help Topic -->
 <script>
@@ -127,12 +127,86 @@ doAppStart();
     <p class="ps3"><span class="ts13">&nbsp;</span></p>
     <p class="ps6"><span class="ts12">sip-base-environment-n.n.n-n.el9.x86_64.rpm</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The base environment includes the provision of two systemd services that, by default will run under a user account and user group named sip-service, which will be created during the installation if they do not already exist. If you prefer to have the environment owned by and the services run under a different user account or group, you can do so be creating the configuration file </span><span class="ts12">/etc/sysconfig/sip.conf</span><span class="ts4">&nbsp;and defining the user account and group to be used, like this:</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps6"><span class="ts12"># Customizes the service account used by Streaming Integration Platform services.</span></p>
+    <p class="ps6"><span class="ts12">SVC_USER=&quot;username&quot;</span></p>
+    <p class="ps6"><span class="ts12">SVC_GROUP=&quot;groupname&quot;</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The installation is started using the package manager, and requires root privileges, like this:</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps6"><span class="ts12">sudo dnf install sip-base-environment-n.n.n-n.el9.x86_64.rpm</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts4">The product will be installed into the directory </span><span class="ts12">/usr/lib/synergex/sip/base-environment</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div class="hr-wrapper">
+      <hr class="hline0" />
+    </div>
+    <h1 class="hd1"><span class="ts5">Destination</span></h1>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <p class="ps3"><span class="ts4">The installation creates and/or places files in the following locations:</span></p>
+    <p class="ps3"><span class="ts3">&nbsp;</span></p>
+    <div>
+      <table class="tbl1">
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts7">Location</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts7">Description</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">/usr/lib/synergex/sip/base-environment</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">Main base environment executables and other files.</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">/etc/synergex/sip</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">Configuration files.</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">/etc/iceoryx2</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">A configuration file used by one specific dependency library (iceoryx2.toml).</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">/etc/profile.d</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">Login scripts for interactive processes (sip-profile.sh and sip-profile.csh).</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">/etc/systemd/system</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">Service unit files (sip-message-broker.service and sip-snapshot-agent.service).</span></p>
+          </td>
+        </tr>
+        <tr class="row0">
+          <td class="cell2">
+            <p class="ps3"><span class="ts10">/var/log/synergex/sip</span></p>
+          </td>
+          <td class="cell3">
+            <p class="ps3"><span class="ts10">Various log files.</span></p>
+          </td>
+        </tr>
+      </table>
+    </div>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <p class="ps3"><span class="ts3">&nbsp;</span></p>
     <div class="hr-wrapper">
@@ -155,26 +229,26 @@ doAppStart();
     <div>
       <table class="tbl1">
         <tr class="row0">
-          <td class="cell2">
+          <td class="cell4">
             <p class="ps3"><span class="ts7">Application</span></p>
           </td>
-          <td class="cell3">
+          <td class="cell5">
             <p class="ps3"><span class="ts7">Service Name</span></p>
           </td>
         </tr>
         <tr class="row0">
-          <td class="cell2">
+          <td class="cell4">
             <p class="ps3"><span class="ts10">Snapshot Agent</span></p>
           </td>
-          <td class="cell3">
+          <td class="cell5">
             <p class="ps3"><span class="ts15">sip-snapshot-agent</span></p>
           </td>
         </tr>
         <tr class="row0">
-          <td class="cell2">
+          <td class="cell4">
             <p class="ps3"><span class="ts10">Message Broker</span></p>
           </td>
-          <td class="cell3">
+          <td class="cell5">
             <p class="ps3"><span class="ts15">sip-message-broker</span></p>
           </td>
         </tr>
